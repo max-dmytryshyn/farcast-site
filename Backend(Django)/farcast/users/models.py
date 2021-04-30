@@ -4,7 +4,7 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django_countries.fields import CountryField
 
-class CustomUser(AbstractUser):
+class FarCastUser(AbstractUser):
     display_name = models.CharField(verbose_name=_("Display name"), max_length=30, help_text=_("Will be shown e.g. when commenting"))
     date_of_birth = models.DateField(verbose_name=_("Date of birth"), blank=True, null=True)
     address1 = models.CharField(verbose_name=_("Address line 1"), max_length=1024, blank=True, null=True)
