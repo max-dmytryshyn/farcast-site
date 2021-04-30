@@ -80,12 +80,12 @@ WSGI_APPLICATION = 'farcast.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': f'{str(os.getenv('ENGINE'))}',
-        'NAME': f'{str(os.getenv('NAME'))}',
-        'USER': f'{str(os.getenv('USER'))}',
-        'PASSWORD': f'{str(os.getenv('PASSWORD'))}',
-        'HOST': f'{str(os.getenv('HOST'))}',
-        'PORT': f'{str(os.getenv('PORT'))}',
+        'ENGINE': f"{str(os.getenv('ENGINE'))}",
+        'NAME': f"{str(os.getenv('NAME'))}",
+        'USER': f"{str(os.getenv('USER'))}",
+        'PASSWORD': f"{str(os.getenv('PASSWORD'))}",
+        'HOST': f"{str(os.getenv('HOST'))}",
+        'PORT': f"{str(os.getenv('PORT'))}",
     }
 }
 
