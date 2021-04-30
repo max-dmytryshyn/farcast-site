@@ -82,7 +82,7 @@ DATABASES = {
     'default': {
         'ENGINE': f"{str(os.getenv('ENGINE'))}",
         'NAME': f"{str(os.getenv('NAME'))}",
-        'USER': f"{str(os.getenv('USER'))}",
+        'USER': f"{str(os.getenv('POSTGRESQL_USER_NAME'))}",
         'PASSWORD': f"{str(os.getenv('PASSWORD'))}",
         'HOST': f"{str(os.getenv('HOST'))}",
         'PORT': f"{str(os.getenv('PORT'))}",
