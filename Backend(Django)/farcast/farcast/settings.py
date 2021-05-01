@@ -19,7 +19,6 @@ load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -35,13 +34,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django-countries',
+    'django_countries',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -80,14 +80,19 @@ WSGI_APPLICATION = 'farcast.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': f"{str(os.getenv('ENGINE'))}",
+        'NAME': f"{str(os.getenv('NAME'))}",
+        'USER': f"{str(os.getenv('POSTGRESQL_USER_NAME'))}",
+        'PASSWORD': f"{str(os.getenv('PASSWORD'))}",
+        'HOST': f"{str(os.getenv('HOST'))}",
+        'PORT': f"{str(os.getenv('PORT'))}",
     }
 }
 
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
+AUTH_USER_MODEL = "users.FarCastUser"
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -128,3 +133,4 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
