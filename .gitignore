@@ -128,3 +128,16 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .DS_Store
+.idea/aws.xml
+.idea/aws.xml
+.idea/aws.xml
+.idea/workspace.xml
+.idea/aws.xml
+.idea/workspace.xml
+Backend(Django)/farcast/.idea/vcs.xml
+Backend(Django)/farcast/.idea/modules.xml
+Backend(Django)/farcast/.idea/misc.xml
+Backend(Django)/farcast/.idea/inspectionProfiles/Project_Default.xml
+Backend(Django)/farcast/.idea/inspectionProfiles/profiles_settings.xml
+Backend(Django)/farcast/.idea/farcast.iml
+Backend(Django)/farcast/.idea/aws.xml
