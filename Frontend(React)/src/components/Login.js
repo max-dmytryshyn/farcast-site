@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react"
 import axios from 'axios';
+import NavLogin from "./NavLogin";
+import "../login.css"
 
 
 class Login extends React.Component {
@@ -29,10 +31,12 @@ class Login extends React.Component {
     }
     render() {
         return (
+            
             <div className="login">
-                <div class="box1">Log In
-                    <div class="Username">Email or sername</div>
-                    <div class="row">
+                <div> <NavLogin /> </div>
+                <div class="boxOne">Log In
+                    <div class="Username">Email or surname</div>
+                    <div class="rowLogin">
                         <div class="Username-field">
                             <input type="text" class="form-control" id="email" placeholder="Enter email or username" name="email" onChange={this.setLogin} />
                         </div>
@@ -44,20 +48,20 @@ class Login extends React.Component {
                         </div>
                         <div class="Remember-forgot-field">
                             <label class="form-check-label"><input class="form-check-input" type="checkbox" />Remember me</label>
-                            <a class="Forgot-url" href="http://localhost:3000/" >Forgot your password?</a>
+                            <a class="Forgot-url" href="#" >Forgot your password?</a>
                         </div>
                     </div>
                     <button type="submit" onClick={this.handleLogin} class="btn btn-primary">Get start</button>
                     <div class="Create-an-account">Not registered yet?
-                        <a class="Create-url" href="#">Create an account</a>
+                        <a class="Create-url" href="/register">Create an account</a>
                     </div>
                 </div>
                 <div class="or-login-with">or login with...</div>
                 <div class="login-photos" >
-                    <a href="http://localhost:3000/">
-                        <img src="google2.ico" alt="Google" />
+                    <a href="#">
+                        <img src="google.ico" alt="Google" />
                     </a>
-                    <a href="http://localhost:3000/">
+                    <a href="#">
                         <img src="facebook.ico" alt="Facebook" />
                     </a>
                 </div>
