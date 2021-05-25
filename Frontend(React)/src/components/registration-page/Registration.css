@@ -1,10 +1,5 @@
   
-  body{
-    background-color: #7796A8;
-    --border-radius: 15px;
-  }
-  
-  .Registration {
+   .Registration {
     padding-top: 4%;
     display: flex;
     align-items: flex-start;
@@ -16,7 +11,7 @@
     width: 100%;
     max-width: 1170px;
     padding-bottom: 3%;
-    border-radius: var(--border-radius);
+    border-radius: 15px;
     background: #FFD2B1;
     margin: 0 auto; 
     color: rgb(0, 0, 0);
