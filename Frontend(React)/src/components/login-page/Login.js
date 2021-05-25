@@ -53,7 +53,7 @@ class Login extends React.Component {
                     </div>
                     <button type="submit" onClick={this.handleLogin} class="btn btn-primary">Get start</button>
                     <div class="Create-an-account">Not registered yet?
-                        <a class="Create-url" href="/register">Create an account</a>
+                        <a class="Create-url" href="/registration">Create an account</a>
                     </div>
                 </div>
             </div>
