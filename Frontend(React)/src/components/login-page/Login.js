@@ -56,15 +56,6 @@ class Login extends React.Component {
                         <a class="Create-url" href="/register">Create an account</a>
                     </div>
                 </div>
-                <div class="or-login-with">or login with...</div>
-                <div class="login-photos" >
-                    <a href="#">
-                        <img src="google.ico" alt="Google" />
-                    </a>
-                    <a href="#">
-                        <img src="facebook.ico" alt="Facebook" />
-                    </a>
-                </div>
             </div>
         )
     }
