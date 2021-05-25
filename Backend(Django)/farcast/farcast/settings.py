@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
+    'prediction_tables.apps.PredictionTablesConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
