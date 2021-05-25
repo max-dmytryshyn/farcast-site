@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.validators import MaxValueValidator
+from django.utils import timezone
 
 
 class ProductForPrediction(models.Model):
@@ -11,8 +12,9 @@ class ProductForPrediction(models.Model):
 
 
 class SalePrediction(models.Model):
-    product = models.ForeignKey(ProductForPrediction, on_delete = models.CASCADE)
+    day = models.DateField()
     hour = models.PositiveSmallIntegerField(MaxValueValidator(23))
+    product = models.ForeignKey(ProductForPrediction, on_delete = models.CASCADE)
     amount = models.IntegerField()
 
     class Meta:
