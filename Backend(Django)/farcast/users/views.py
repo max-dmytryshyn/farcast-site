@@ -9,7 +9,7 @@ from .models import FarCastUser
 from rest_framework.permissions import IsAuthenticated
 
 
-class FarCastUserView(viewsets.ModelViewSet):
+class FarCastUserViewSet(viewsets.ModelViewSet):
     # permission_classes = (IsAuthenticated,)
 
     queryset = FarCastUser.objects.all()
@@ -20,3 +20,4 @@ class FarCastUserView(viewsets.ModelViewSet):
         user = get_object_or_404(FarCastUser, username=username)
         data = FarCastUserSerializer(user).data
         return Response(data, status=status.HTTP_200_OK)
+
