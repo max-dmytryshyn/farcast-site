@@ -35,10 +35,10 @@ class Login extends React.Component {
             <div className="login">
                
                 <div class="boxOne">Log In
-                    <div class="Username">Email or surname</div>
+                    <div class="Username">Username</div>
                     <div class="rowLogin">
                         <div class="Username-field">
-                            <input type="text" class="form-control" id="email" placeholder="Enter email or username" name="email" onChange={this.setLogin} />
+                            <input type="text" class="form-control" id="email" placeholder="Enter username" name="email" onChange={this.setLogin} />
                         </div>
                     </div>
                     <div class="Password">Password </div>
