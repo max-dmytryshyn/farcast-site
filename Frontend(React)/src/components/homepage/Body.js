@@ -1,8 +1,8 @@
 import React from "react"
 
-import WelcomePart from "./BodyParts/WelcomePart"
-import FeaturesPart from "./BodyParts/FeaturesPart"
-import PayPlansPart from "./BodyParts/PayPlansPart"
+import WelcomePart from "./body-parts/WelcomePart"
+import FeaturesPart from "./body-parts/FeaturesPart"
+import PayPlansPart from "./body-parts/PayPlansPart"
 
 function Body() {
     return (

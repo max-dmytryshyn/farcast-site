@@ -1,6 +1,6 @@
 import React from "react"
 
-import FirstColumn from "./FooterParts/Contacts"
+import FirstColumn from "./footer-parts/Contacts"
 
 
 function Footer() {

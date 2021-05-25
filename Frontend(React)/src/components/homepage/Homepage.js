@@ -4,8 +4,7 @@ import Header from "./Header"
 import Body from "./Body"
 import Footer from "./Footer"
 
-import "./homepage.css"
-import "../NavBar/navbar.css"
+import "./Homepage.css"
 
 function Homepage() {
     return (
