@@ -8,6 +8,8 @@
 }
 
 #navbar nav {
+  padding-top: 10px;
+  
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -27,6 +29,7 @@
           justify-content: space-between;
   padding-left: 7vw;
   padding-right: 5vw;
+
 }
 
 #navbar nav .navlist {
@@ -56,7 +59,7 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-weight: 200;
-  font-size: 1vw;
+  font-size: 1.3vw;
   padding: 10px 15px 10px;
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
