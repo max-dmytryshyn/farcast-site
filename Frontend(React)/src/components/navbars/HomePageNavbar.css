@@ -1,0 +1,107 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 3vw;
+  z-index: 2;
+  background-color: #FF9D57;
+}
+
+#navbar nav {
+  padding-top: 10px;
+  
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 7vw;
+  padding-right: 5vw;
+
+}
+
+#navbar nav .navlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#navbar nav .logo {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  z-index: 2;
+}
+
+#navbar nav .navlist li {
+  list-style: none;
+  padding: 0 2vmin 0 2vmin;
+}
+
+#navbar nav .navlist a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 200;
+  font-size: 1.3vw;
+  padding: 10px 15px 10px;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+#navbar nav .navlist a:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.1vw;
+  left: 0;
+  position: absolute;
+  background: white;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  width: 0;
+}
+
+#navbar nav .navlist a:hover:after {
+  width: 100%;
+}
+
+#navbar nav .burger {
+  display: none;
+}
+
+#navbar nav .burger div {
+  position: relative;
+  width: 25px;
+  height: 2px;
+  background-color: wheat;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1400px) {
+  #navbar {
+    height: 4vw;
+  }
+  #navbar .navlist a {
+    font-size: 15vw;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */
