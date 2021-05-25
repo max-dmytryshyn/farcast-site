@@ -12,7 +12,7 @@ function Nav() {
               <li><a href="#start">Home</a></li>
               <li><a href="#second_part">About</a></li>
               <li><a href="#third_part">Prices</a></li>
-              <li><a href="/login">Sign in</a></li>
+              <li><a href="">Sign in</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
