@@ -613,27 +613,32 @@ body {
   padding-left: 8vw;
 }
 
-#contacts #first_column {
+#contacts #contacts_column {
   display: inline-block;
-  padding-top: 7vw;
-  padding-left: 6vw;
+  padding-top: 3vw;
+  padding-left: 5vw;
   list-style: none;
 }
 
-#contacts #first_column ul {
+#contacts #contacts_column ul {
   -webkit-padding-start: 2vw;
           padding-inline-start: 2vw;
   list-style: none;
   font-weight: 200;
 }
 
-#contacts #first_column ul .column_head {
+#contacts #contacts_column ul .column_head {
   padding-bottom: 1.5vw;
   font-weight: 400;
-  font-size: 1.2vw;
+  font-size: 3vw;
+  letter-spacing: 0.4vw;
 }
 
-#contacts #first_column ul li {
+#contacts #contacts_column ul .mail {
+  font-weight: 400;
+}
+
+#contacts #contacts_column ul li {
   padding-bottom: 0.8vw;
   font-size: 1vw;
 }
