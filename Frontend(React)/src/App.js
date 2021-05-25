@@ -1,8 +1,7 @@
 import React from "react"
 
 import {Route, Link} from "react-router-dom"
-import "./style.css"
-import Homepage from "./Homepage"
+import Homepage from "./components/HomePage/Homepage"
 
 function App() {
     return (

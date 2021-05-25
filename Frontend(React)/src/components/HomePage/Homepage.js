@@ -1,10 +1,11 @@
 import React from "react"
 
-import Header from "./components/Header"
-import Body from "./components/Body"
-import Footer from "./components/Footer"
+import Header from "./Header"
+import Body from "./Body"
+import Footer from "./Footer"
 
-import "./style.css"
+import "./homepage.css"
+import "../NavBar/navbar.css"
 
 function Homepage() {
     return (

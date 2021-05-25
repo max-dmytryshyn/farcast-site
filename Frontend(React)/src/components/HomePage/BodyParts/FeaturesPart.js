@@ -1,10 +1,10 @@
 import React from "react"
 
-import yellow_man from "../../images/yellow_man.svg"
+import yellow_man from "../../../images/homepage_images/yellow_man.svg"
 
-function SecondPart() {
+function FeaturesPart() {
     return (
-        <div id="second_part">
+        <div id="features_part">
             <div className="row1">
                 <span className="quote1">Зручно</span>
                 <span className="quote2">Дистанційно</span>
@@ -27,4 +27,4 @@ function SecondPart() {
     )
 }
 
-export default SecondPart
+export default FeaturesPart

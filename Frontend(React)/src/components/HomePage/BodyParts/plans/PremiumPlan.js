@@ -1,13 +1,13 @@
 import React from "react"
 
-import checkmark from "../../../images/checkmark.svg"
-import cross from "../../../images/cross.svg"
+import checkmark from "../../../../images/homepage_images/checkmark.svg"
+import cross from "../../../../images/homepage_images/cross.svg"
 
-function StandartPlan() {
+function PremiumPlan() {
     return (
-        <div>            
-            <div className="name">Standart</div>
-            <div className="cost">40<span className="dollar">$</span></div>
+        <div>
+            <div className="name">Premium</div>
+            <div className="cost">66.9<span className="dollar">$</span></div>
             <div className="month">per month</div>
             <div className="plans_qual">
                 <span><img src={checkmark} />Безкоштовне обслуговування</span><br/>
@@ -26,4 +26,4 @@ function StandartPlan() {
     )
 }
 
-export default StandartPlan
+export default PremiumPlan

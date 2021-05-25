@@ -1,10 +1,10 @@
 import React from "react"
 
-import red_woman from "../../images/red_woman.svg"
+import red_woman from "../../../images/homepage_images/red_woman.svg"
 
-function FirstPart() {
+function WelcomePart() {
     return (
-        <div id="first_part">
+        <div id="welcome_part">
             <div className="square"> 
                 <div className="content">
                     <p>Вигідне</p>
@@ -19,4 +19,4 @@ function FirstPart() {
     )
 }
 
-export default FirstPart
+export default WelcomePart

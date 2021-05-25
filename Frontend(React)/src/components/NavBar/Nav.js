@@ -1,7 +1,6 @@
 import React from "react"
 
-import logo from "../images/farcast_logo.svg"
-import tele from "../images/facebook.svg"
+import logo from "../../images/homepage_images/farcast_logo.svg"
 
 function Nav() {
     return (
@@ -10,8 +9,8 @@ function Nav() {
             <img src = {logo} className="logo"></img>
             <ul className="navlist"> 
               <li><a href="#start">Home</a></li>
-              <li><a href="#second_part">About</a></li>
-              <li><a href="#third_part">Prices</a></li>
+              <li><a href="#features_part">About</a></li>
+              <li><a href="#pay_plans_part">Prices</a></li>
               <li><a href="">Sign in</a></li>
             </ul>
             <div class="burger">

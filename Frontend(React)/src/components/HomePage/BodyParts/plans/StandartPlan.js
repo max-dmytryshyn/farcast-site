@@ -1,21 +1,21 @@
 import React from "react"
 
-import checkmark from "../../../images/checkmark.svg"
-import cross from "../../../images/cross.svg"
+import checkmark from "../../../../images/homepage_images/checkmark.svg"
+import cross from "../../../../images/homepage_images/cross.svg"
 
-function NewbiePlan() {
+function StandartPlan() {
     return (
-        <div className="content_plan">
-            <div className="name">Newbie</div>
-            <div className="cost">30<span className="dollar">$</span></div>
+        <div>            
+            <div className="name">Standart</div>
+            <div className="cost">40<span className="dollar">$</span></div>
             <div className="month">per month</div>
             <div className="plans_qual">
                 <span><img src={checkmark} />Безкоштовне обслуговування</span><br/>
                 <span><img src={checkmark} />Обмеження на зняття готівки</span><br/>
                 <span><img src={checkmark} />Платна підтримка</span><br/>
                 <span><img src={checkmark} />Платна допомога</span><br/>
-                <span><img src={checkmark} />Безкоштовне обслуговування</span><br/>
-                <span><img src={checkmark} />Обмеження на зняття готівки</span><br/>
+                <span><img src={cross} />Безкоштовне обслуговування</span><br/>
+                <span><img src={cross} />Обмеження на зняття готівки</span><br/>
                 <span><img src={cross} />Платна підтримка</span><br/>
                 <span><img src={cross} />Платна допомога</span><br/>
             </div>
@@ -26,4 +26,4 @@ function NewbiePlan() {
     )
 }
 
-export default NewbiePlan
+export default StandartPlan

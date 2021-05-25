@@ -4,12 +4,11 @@ import PremiumPlan from "./plans/PremiumPlan"
 import StandartPlan from "./plans/StandartPlan"
 import NewbiePlan from "./plans/NewbiePlan"
 
-import blue_man from "../../images/blue_man.svg"
-import bubbles from "../../images/bubbles.svg"
+import blue_man from "../../../images/homepage_images/blue_man.svg"
 
-function ThirdPart() {
+function PayPlansPart() {
     return (
-        <div id="third_part">
+        <div id="pay_plans_part">
             <div className="newbie_plan">
                 <NewbiePlan />
             </div>
@@ -24,4 +23,4 @@ function ThirdPart() {
     )
 }
 
-export default ThirdPart
+export default PayPlansPart
