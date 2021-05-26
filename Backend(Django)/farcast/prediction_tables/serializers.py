@@ -13,3 +13,5 @@ class SalePredictionSerializer(serializers.ModelSerializer):
     class Meta:
         model = SalePrediction
         fields = '__all__'
+        depth = 1
+
