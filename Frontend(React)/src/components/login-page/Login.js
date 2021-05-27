@@ -21,7 +21,7 @@ class Login extends React.Component {
         axios.post('http://127.0.0.1:8000/users/login/', {
             password: password,
             username: username
-        }).then(function () {
+        }).then(() => {
             axios.get('http://127.0.0.1:8000/users/all/username/' + username + '/')
             .then(function (response) {
                 localStorage.setItem ("email", response.data.email);
@@ -29,10 +29,10 @@ class Login extends React.Component {
                 localStorage.setItem ("first name", response.data.first_name);
                 localStorage.setItem ("last name", response.data.last_name);
                 localStorage.setItem ("password", response.data.password);
-                this.props.history.push('/profile')
               })
+            this.props.history.push('/profile');
         }).catch(() => {
-            alert('error');
+
         });
     }
 
