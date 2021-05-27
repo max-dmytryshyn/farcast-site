@@ -20,7 +20,7 @@ class Login extends React.Component {
     }
     handleLogin = () => {
         const { username, password } = this.state;
-        axios.post('http://127.0.0.1:8000/login/', {
+        axios.post('http://127.0.0.1:8000/users/login/', {
             password: password,
             username: username
         }).then(function () {
