@@ -20,11 +20,11 @@ class Login extends React.Component {
     }
     handleLogin = () => {
         const { username, password } = this.state;
-        axios.post('http://127.0.0.1:8000/api/token/', {
+        axios.post('http://127.0.0.1:8000/login/', {
             password: password,
             username: username
         }).then(function () {
-            console.log('succesful login')
+            console.log('successful login')
         }).catch(() => {
             alert('error');
         });
@@ -38,7 +38,7 @@ class Login extends React.Component {
                     <div class="Username">Username</div>
                     <div class="rowLogin">
                         <div class="Username-field">
-                            <input type="text" class="form-control" id="email" placeholder="Enter username" name="email" onChange={this.setLogin} />
+                            <input type="text" class="form-control" id="email" placeholder="Enter username" name="email" onChange={this.setUsername} />
                         </div>
                     </div>
                     <div class="Password">Password </div>
