@@ -52,7 +52,7 @@ class Registration extends React.Component {
                         <form class="form_one" id="formOne">
                         <div class="form__message form__message--error"></div>
                         <div class="form__input-group">
-                            <h5 class="name">Login</h5>
+                            <h5 class="name">Name</h5>
                             <input type="text" class="form__input" id="first_name" autofocus placeholder="Enter name" onChange={this.setFirstName}/>
                             <div class="form__input-error-message"></div>
                         </div>
