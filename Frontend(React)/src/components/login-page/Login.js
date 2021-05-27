@@ -24,7 +24,7 @@ class Login extends React.Component {
             password: password,
             username: username
         }).then(function () {
-            axios.get('http://127.0.0.1:8000/users/all/username/' + username)  
+            axios.get('http://127.0.0.1:8000/users/all/username/' + username + '/')
             .then(function (response) {
                 console.log(response.data.email);
               })
