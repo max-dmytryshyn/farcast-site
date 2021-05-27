@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react"
 import axios from 'axios';
 //import NavLogin from "./NavLogin";
 import "./Login.css"
-import { ThemeConsumer } from "react-bootstrap/esm/ThemeProvider";
-import state from "../../redux/state" 
 
 class Login extends React.Component {
     constructor() {

@@ -1,6 +1,5 @@
 import React from "react"
 import "./Profile.css"
-import state from "../../redux/state" 
 
 class Profile extends React.Component {
 
