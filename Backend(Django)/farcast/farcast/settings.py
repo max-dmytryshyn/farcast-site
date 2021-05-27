@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     # 'rest_framework.authtoken',
     'corsheaders',
     'users.apps.UsersConfig',
-    'prediction_tables.apps.PredictionTablesConfig',
+    'predictions.apps.PredictionTablesConfig',
     'products.apps.ProductsConfig',
 ]
 
