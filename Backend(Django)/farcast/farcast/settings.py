@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'users.apps.UsersConfig',
     'prediction_tables.apps.PredictionTablesConfig',
+    'products.apps.ProductsConfig',
 ]
 
 REST_FRAMEWORK = {

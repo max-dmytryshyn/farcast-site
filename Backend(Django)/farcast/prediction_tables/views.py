@@ -1,17 +1,10 @@
 from django.core.exceptions import ValidationError
-from django.shortcuts import render
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 
-from .models import ProductForPrediction, SalePrediction
-from .serializers import ProductForPredictionSerializer, SalePredictionSerializer
-
-
-class ProductForPredictionViewSet(viewsets.ModelViewSet):
-
-    queryset = ProductForPrediction.objects.all()
-    serializer_class = ProductForPredictionSerializer
+from .models import SalePrediction
+from .serializers import SalePredictionSerializer
 
 
 class SalePredictionViewSet(viewsets.ModelViewSet):
