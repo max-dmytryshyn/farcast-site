@@ -31,7 +31,7 @@ class Registration extends React.Component {
 
     handleRegister = () => {
         const { username, password, first_name, last_name, email } = this.state;
-        axios.post('http://127.0.0.1:8000/users/', {
+        axios.post('http://127.0.0.1:8000/users/all/', {
             password: password,
             username: username, 
             first_name: first_name, 
