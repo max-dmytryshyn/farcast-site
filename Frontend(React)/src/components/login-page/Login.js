@@ -26,7 +26,7 @@ class Login extends React.Component {
             .then(function (response) {
                 localStorage.setItem ("email", response.data.email);
                 localStorage.setItem ("username", response.data.username);
-                localStorage.setItem ("fisrt name", response.data.first_name);
+                localStorage.setItem ("first name", response.data.first_name);
                 localStorage.setItem ("last name", response.data.last_name);
                 localStorage.setItem ("password", response.data.password);
                 this.props.history.push('/profile')

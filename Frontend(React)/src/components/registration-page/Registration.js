@@ -39,7 +39,7 @@ class Registration extends React.Component {
         }).then(function () {
             localStorage.setItem ("email", email);
             localStorage.setItem ("username", username);
-            localStorage.setItem ("fisrt name", first_name);
+            localStorage.setItem ("first name", first_name);
             localStorage.setItem ("last name", last_name);
             localStorage.setItem ("password", password);
             this.props.history.push('/profile')

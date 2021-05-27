@@ -11,7 +11,7 @@ class Profile extends React.Component {
                         <h1 class="form__title">Personal Account</h1>
                         <div class="check_box">
                             <h5 class="text">First name</h5>
-                            <h3 class="text_two">{localStorage.getItem ("fisrt name")}</h3>
+                            <h3 class="text_two">{localStorage.getItem ("first name")}</h3>
                             <div class = "change-button" >
                             <a href="#" target="_self" class="btn btn-primary-profile btn-lg active" role="button" aria-pressed="true">Change</a></div>
                         </div>
