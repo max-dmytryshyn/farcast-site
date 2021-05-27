@@ -28,7 +28,6 @@ class Registration extends React.Component {
     setEmail = (e) => {
         this.setState({ email: e.target.value });
     }
-
     handleRegister = () => {
         const { username, password, first_name, last_name, email } = this.state;
         axios.post('http://127.0.0.1:8000/users/', {
@@ -38,7 +37,12 @@ class Registration extends React.Component {
             last_name: last_name, 
             email: email
         }).then(function () {
-            console.log('succesful register')
+            localStorage.setItem ("email", email);
+            localStorage.setItem ("username", username);
+            localStorage.setItem ("fisrt name", first_name);
+            localStorage.setItem ("last name", last_name);
+            localStorage.setItem ("password", password);
+            this.props.history.push('/profile')
         }).catch(() => {
             alert('error');
         });
