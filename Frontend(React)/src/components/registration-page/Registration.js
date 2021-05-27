@@ -30,7 +30,7 @@ class Registration extends React.Component {
     }
     handleRegister = () => {
         const { username, password, first_name, last_name, email } = this.state;
-        axios.post('http://127.0.0.1:8000/users/', {
+        axios.post('http://127.0.0.1:8000/users/all/', {
             password: password,
             username: username, 
             first_name: first_name, 
@@ -56,7 +56,7 @@ class Registration extends React.Component {
                         <form class="form_one" id="formOne">
                         <div class="form__message form__message--error"></div>
                         <div class="form__input-group">
-                            <h5 class="name">Login</h5>
+                            <h5 class="name">Name</h5>
                             <input type="text" class="form__input" id="first_name" autofocus placeholder="Enter name" onChange={this.setFirstName}/>
                             <div class="form__input-error-message"></div>
                         </div>
@@ -80,7 +80,7 @@ class Registration extends React.Component {
                         </form>
                         <form class="form_three" id="formThree">
                         <div class="form__input-group">
-                            <h5 class="username">Username</h5>
+                            <h5 class="username">Login</h5>
                             <input type="text" class="form__input" autofocus placeholder="Enter username"  onChange={this.setUsername}/>
                             <div class="form__input-error-message"></div>
                         </div>
