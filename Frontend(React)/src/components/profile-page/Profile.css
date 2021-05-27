@@ -24,9 +24,9 @@ h1.form__title {
   padding-bottom: 4%;
   font-weight: 500;
 }
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active,
-.show > .btn-primary.dropdown-toggle {
+.btn-primary-profile:not(:disabled):not(.disabled).active,
+.btn-primary-profile:not(:disabled):not(.disabled):active,
+.show > .btn-primary-profile.dropdown-toggle {
   width: 210px;
   color: rgb(0, 0, 0);
   padding: 0.45rem;
@@ -39,7 +39,7 @@ h1.form__title {
   font-size: 1.1rem;
 }
 
-.btn-primary:active {
+.btn-primary-profile:active {
   transform: scale(0.98);
 }
 
