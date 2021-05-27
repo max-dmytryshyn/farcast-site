@@ -37,7 +37,7 @@ class Profile extends React.Component {
                         <hr/>
                         <div class="check_box">
                             <h5 class="text">Password</h5>
-                            <h3 class="text">{localStorage.getItem ("password")}</h3>
+                            <h3 class="text">********</h3>
                             <div class = "change-button" >
                             <a href="#" target="_self" class="btn btn-primary-profile btn-lg active" role="button" aria-pressed="true">Change</a></div>
                         </div>
