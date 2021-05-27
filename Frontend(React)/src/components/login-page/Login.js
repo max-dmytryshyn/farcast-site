@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react"
 import axios from 'axios';
 //import NavLogin from "./NavLogin";
 import "./Login.css"
-
+import { ThemeConsumer } from "react-bootstrap/esm/ThemeProvider";
+import state from "../../redux/state" 
 
 class Login extends React.Component {
     constructor() {
@@ -26,11 +27,17 @@ class Login extends React.Component {
         }).then(function () {
             axios.get('http://127.0.0.1:8000/users/all/username/' + username + '/')
             .then(function (response) {
-                console.log(response.data.email);
+                state.userData.email = response.data.email;
+                state.userData.username = response.data.username;
+                state.userData.firstName = response.data.first_name;
+                state.userData.lastName = response.data.last_name;
+                state.userData.password = response.data.password;
               })
         }).catch(() => {
             alert('error');
         });
+
+ 
     }
     render() {
         return (
@@ -65,3 +72,6 @@ class Login extends React.Component {
 }
 
 export default Login
+
+
+  
