@@ -2,7 +2,7 @@ import React from "react"
 import logo from "../../images/homepage_images/farcast_logo.svg"
 import "./RegistrationNavbar.css"
 
-function LoginNavbar() {
+function RegistrationNavbar() {
     return (
         <div id="registration-navbar">
           <nav>
@@ -12,4 +12,4 @@ function LoginNavbar() {
     )
 }
 
-export default LoginNavbar
+export default RegistrationNavbar
