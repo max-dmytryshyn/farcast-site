@@ -18,6 +18,7 @@ class DataList extends Component {
         window.onload = () => {
             this.setData("2016-04-11")
         }
+
         return (
             <div className="databox">
             {this.state.data.map(postDetail => {
