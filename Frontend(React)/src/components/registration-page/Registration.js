@@ -1,6 +1,7 @@
 import React from "react"
 import axios from 'axios';
 import "./Registration.css"
+import RegistrationNavbar from "../navbars/RegistrationNavbar"
 
 class Registration extends React.Component {
     constructor() {
@@ -46,6 +47,7 @@ class Registration extends React.Component {
     render() {
         return (
             <div className="Registration">
+                <RegistrationNavbar/>
                 <div class="containerRegister">
                     <form class="form" id="register">
                         <h1 class="form__title">Registration</h1>
