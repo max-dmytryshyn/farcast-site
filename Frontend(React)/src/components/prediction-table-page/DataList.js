@@ -13,7 +13,7 @@ class DataList extends Component {
     }
     
     render () {
-        axios.get("http://127.0.0.1:8000/predictions/all/date/2016-04-11/").then((response)=>{this.setState({data: JSON.parse(response.data)})})
+        axios.get("http://127.0.0.1:8000/predictions/all/date/2016-04-11/").then((response)=>{this.setState({data: response.data})})
         return (
             <div className="databox">
             {this.state.data.map(postDetail => {
