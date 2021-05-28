@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import axios from 'axios';
-//import NavLogin from "./NavLogin";
+import LoginNavbar from "../navbars/LoginNavbar"
 import "./Login.css"
 
 
@@ -31,9 +31,8 @@ class Login extends React.Component {
     }
     render() {
         return (
-            
             <div className="login">
-               
+                <LoginNavbar />
                 <div class="boxOne">Log In
                     <div class="Username">Username</div>
                     <div class="rowLogin">
