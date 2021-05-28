@@ -4,9 +4,10 @@
   align-items: flex-start;
   justify-content: center;
   background-color: #FF9D57;
+
 }
 
-.container {
+.container-profile {
   width: 100%;
   max-width: 1170px;
   padding-bottom: 3%;
@@ -37,6 +38,7 @@ h1.form__title {
   border: 1px solid transparent;
   outline: none;
   font-size: 1.1rem;
+  margin-right: 100%;
 }
 
 .btn-primary-profile:active {
@@ -48,27 +50,34 @@ h1.form__title {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding-left: 5%;
+  justify-content: space-around;
   padding-right: 25%;
 }
 
-.h3,
-h3.text {
-  font-size: 1.75rem;
+h3.first-name-text, h3.last-name-text {
   margin-left: 10%;
   font-weight: 400;
 }
 
-.h3,
-h3.text_two {
-  margin-left: 30px;
+h3.email-text {
+  
+  font-weight: 400;
+}
+
+h3.login-profile-text {
+  margin-right: 30%;
+  font-weight: 400;
+}
+
+h3.password-profile-text {
+  margin-left: 11%;
   font-weight: 400;
 }
 
 .h5,
 h5.text {
   color: #000000;
+  padding: auto;
 }
 
 hr {
