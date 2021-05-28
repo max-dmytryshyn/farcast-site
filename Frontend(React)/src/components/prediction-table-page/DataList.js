@@ -12,7 +12,7 @@ class DataList extends Component {
     }
     setData = (date) => {
         axios.get("http://127.0.0.1:8000/predictions/all/date/" + date + "/"
-        ).then((response) =>{data: response.data})
+        ).then((response) =>{this.setState({data: response.data})})
     }
 
 
