@@ -26,11 +26,12 @@ class Login extends React.Component {
         }).then(() => {
             axios.get('http://127.0.0.1:8000/users/all/username/' + username + '/')
             .then(function (response) {
-                localStorage.setItem ("email", response.data.email);
-                localStorage.setItem ("username", response.data.username);
-                localStorage.setItem ("first name", response.data.first_name);
-                localStorage.setItem ("last name", response.data.last_name);
-                localStorage.setItem ("password", response.data.password);
+                localStorage.setItem("email", response.data.email);
+                localStorage.setItem("username", response.data.username);
+                localStorage.setItem("first name", response.data.first_name);
+                localStorage.setItem("last name", response.data.last_name);
+                localStorage.setItem("password", response.data.password);
+                localStorage.setItem("isLoggedIn", true)
               })
             this.props.history.push('/profile');
         }).catch(() => {

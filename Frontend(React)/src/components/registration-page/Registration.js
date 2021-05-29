@@ -43,6 +43,7 @@ class Registration extends React.Component {
             localStorage.setItem ("first name", first_name);
             localStorage.setItem ("last name", last_name);
             localStorage.setItem ("password", password);
+            localStorage.setItem("isLoggedIn", true)
             this.props.history.push('/profile')
         });
     }
