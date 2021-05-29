@@ -1,0 +1,78 @@
+.Settings {
+  padding-top: 4%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #FF9D57;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  padding-bottom: 3%;
+  border-radius: 15px;
+  background: #FFD2B1;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+}
+
+.h1,
+h1.form__title {
+  font-size: 3.5rem;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 4%;
+  font-weight: 500;
+}
+.btn-primary-profile:not(:disabled):not(.disabled).active,
+.btn-primary-profile:not(:disabled):not(.disabled):active,
+.show > .btn-primary-profile.dropdown-toggle {
+  width: 210px;
+  color: rgb(0, 0, 0);
+  padding: 0.45rem;
+  border-radius: 15px;
+  background-color: #ffffff;
+  margin-left: 100%;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.btn-primary-profile:active {
+  transform: scale(0.98);
+}
+
+.check_box {
+  padding: 0.5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 25%;
+}
+
+.h3,
+h3.text {
+  font-size: 1.75rem;
+  margin-left: 10%;
+  font-weight: 400;
+}
+
+.h3,
+h3.text_two {
+  margin-left: 30px;
+  font-weight: 400;
+}
+
+.h5,
+h5.text {
+  color: #000000;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #000000;
+}
