@@ -29,7 +29,6 @@ class Registration extends React.Component {
     setEmail = (e) => {
         this.setState({ email: e.target.value });
     }
-
     handleRegister = () => {
         const { username, password, first_name, last_name, email } = this.state;
         axios.post('http://127.0.0.1:8000/users/all/', {
@@ -38,10 +37,13 @@ class Registration extends React.Component {
             first_name: first_name, 
             last_name: last_name, 
             email: email
-        }).then(function () {
-            console.log('succesful register')
-        }).catch(() => {
-            alert('error');
+        }).then(() => {
+            localStorage.setItem ("email", email);
+            localStorage.setItem ("username", username);
+            localStorage.setItem ("first name", first_name);
+            localStorage.setItem ("last name", last_name);
+            localStorage.setItem ("password", password);
+            this.props.history.push('/profile')
         });
     }
     render() {
@@ -79,7 +81,7 @@ class Registration extends React.Component {
                         <form class="form_three" id="formThree">
                         <div class="form__input-group">
                             <h5 class="username">Login</h5>
-                            <input type="text" class="form__input" autofocus placeholder="Enter username"  onChange={this.setUsername}/>
+                            <input type="text" class="form__input" autofocus placeholder="Enter login"  onChange={this.setUsername}/>
                             <div class="form__input-error-message"></div>
                         </div>
                         <div class="form__input-group">
