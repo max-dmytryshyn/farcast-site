@@ -1,12 +1,13 @@
 .Settings {
-  padding-top: 4%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   background-color: #FF9D57;
+  
 }
 
 .container-profile {
+  padding-top: 1%;
   width: 100%;
   max-width: 1170px;
   padding-bottom: 3%;
@@ -50,28 +51,41 @@ h1.form__title {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-right: 25%;
 }
 
 h3.first-name-text, h3.last-name-text {
-  margin-left: 10%;
+  position: absolute;
+  left: 40%;
   font-weight: 400;
+  word-wrap: break-word;
+  max-width:24%;
 }
 
 h3.email-text {
-  
+  position: absolute;
+  left: 40%;
   font-weight: 400;
+  word-wrap: break-word;
+  max-width:24%;
+  height: 30px;
 }
 
 h3.login-profile-text {
-  margin-right: 30%;
+  position: absolute;
+  left: 40%;
   font-weight: 400;
+  word-wrap: break-word;
+  max-width:24%;
 }
 
 h3.password-profile-text {
-  margin-left: 11%;
+  position: absolute;
+  left: 40%;
   font-weight: 400;
+  word-wrap: break-word;
+  max-width:24%;
 }
 
 .h5,
