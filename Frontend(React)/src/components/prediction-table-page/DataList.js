@@ -17,9 +17,7 @@ class DataList extends Component {
 
 
     render () {
-        window.onload = () => {
-            this.setData("2016-04-11")
-        }
+        this.setData("2016-04-11")
         var current_hour = this.state.data[0] - 1;
         return (
             <div className="databox">

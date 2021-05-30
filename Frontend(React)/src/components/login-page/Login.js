@@ -33,7 +33,7 @@ class Login extends React.Component {
                 localStorage.setItem("password", response.data.password);
                 localStorage.setItem("isLoggedIn", true)
               })
-            this.props.history.push('/profile');
+            this.props.history.push('/predictions');
         }).catch(() => {
 
         });

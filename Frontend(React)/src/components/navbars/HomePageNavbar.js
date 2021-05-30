@@ -4,6 +4,15 @@ import "./HomePageNavbar.css"
 
 
 function Nav () {
+  function handleLoginOut() {
+    localStorage.removeItem("email");
+    localStorage.removeItem("username");
+    localStorage.removeItem("first name");
+    localStorage.removeItem("last name");
+    localStorage.removeItem("password");
+    localStorage.setItem("isLoggedIn", false)
+    
+  }
   return (
       <div id="navbar">
           <script src="script.js"></script>
@@ -16,7 +25,7 @@ function Nav () {
           <li><a href="/predictions">Predictions</a></li>
           <li><a href="#">Statistics</a></li>
           <li><a href="/profile">Profile</a></li>
-          <li><a href="/login">Sign out</a></li>
+          <li><a href="/home" onClick={handleLoginOut}>Sign out</a></li>
         </ul>
       </nav>
         :
