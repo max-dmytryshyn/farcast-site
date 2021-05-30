@@ -1,5 +1,4 @@
 import React from "react"
-
 import logo from "../../images/homepage_images/farcast_logo.svg"
 import "./LoginNavbar.css"
 
