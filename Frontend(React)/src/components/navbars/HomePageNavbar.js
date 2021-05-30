@@ -21,7 +21,7 @@ function Nav () {
       </nav>
         :
         <nav>
-          <a href="/home"><img src = {logo} className="logo"></img></a>
+          <img src = {logo} className="logo"></img>
           <ul className="navlist"> 
             <li><a href="#start">Home</a></li>
             <li><a href="#features_part">About</a></li>

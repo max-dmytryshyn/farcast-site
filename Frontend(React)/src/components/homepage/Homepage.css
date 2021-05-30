@@ -1,21 +1,21 @@
 p {
-  margin-top: 30px;
-  padding-top: 70px;
+  margin-top: 2vw;
+  padding-top: 3vw;
 }
 
--webkit-scrollbar {
-  width: 10px;
+::-webkit-scrollbar {
+  width: 0.6vw;
 }
 
--webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: #414141;
 }
 
--webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: #888;
 }
 
--webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
@@ -63,8 +63,8 @@ body {
 
 .content {
   font-size: 7vw;
-  line-height: 2vw;
-  padding-top: 3vw;
+  line-height: 1.5vw;
+  padding-top: 2vw;
   padding-left: 2vw;
 }
 
@@ -269,19 +269,12 @@ body {
   width: 100%;
 }
 
-.bubbles {
-  position: relative;
-  z-index: -1;
-  width: 100%;
-  bottom: 50vw;
-}
-
 .newbie_plan {
   display: inline-block;
   background-color: #FFD2B1;
   width: 23vw;
   height: 37vw;
-  border-radius: 15px;
+  border-radius: 1vw;
   margin-left: 7vw;
 }
 
@@ -295,7 +288,7 @@ body {
   text-align: center;
   font-size: 2vw;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 1vw;
 }
 
 .newbie_plan .cost {
@@ -333,7 +326,6 @@ body {
 .newbie_plan .buy {
   margin-left: 4%;
   margin-top: 5vw;
-  padding-bottom: 1px;
   text-align: center;
   background: orange;
   border-radius: 15px;
@@ -357,7 +349,7 @@ body {
 }
 
 .newbie_plan .buy:hover {
-  background-color: #3b82af;
+  background-color: #d68644;
 }
 
 .newbie_plan .buy:active {
@@ -374,7 +366,7 @@ body {
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   color: #7796A8;
-  margin-top: 1vw;
+  margin-top: 0.2vw;
   cursor: pointer;
 }
 
@@ -383,7 +375,7 @@ body {
   background-color: #FFD2B1;
   width: 23vw;
   height: 37vw;
-  border-radius: 15px;
+  border-radius: 1vw;
   margin-left: 7vw;
 }
 
@@ -397,7 +389,7 @@ body {
   text-align: center;
   font-size: 2vw;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 1vw;
 }
 
 .standart_plan .cost {
@@ -435,6 +427,7 @@ body {
 .standart_plan .buy {
   margin-left: 4%;
   margin-top: 5vw;
+  text-align: center;
   background: orange;
   border-radius: 15px;
   outline: none;
@@ -457,7 +450,7 @@ body {
 }
 
 .standart_plan .buy:hover {
-  background-color: #3b82af;
+  background-color: #d68644;
 }
 
 .standart_plan .buy:active {
@@ -474,7 +467,7 @@ body {
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   color: #7796A8;
-  margin-top: 1vw;
+  margin-top: 0.2vw;
   cursor: pointer;
 }
 
@@ -483,8 +476,8 @@ body {
   background-color: #FFD2B1;
   width: 23vw;
   height: 37vw;
-  border-radius: 15px;
-  margin-left: 6.5vw;
+  border-radius: 1vw;
+  margin-left: 7vw;
 }
 
 .premium_plan img {
@@ -497,11 +490,7 @@ body {
   text-align: center;
   font-size: 2vw;
   font-weight: 500;
-  margin-top: 20px;
-  text-align: center;
-  font-size: 2vw;
-  font-weight: 500;
-  margin-top: 20px;
+  margin-top: 1vw;
 }
 
 .premium_plan .cost {
@@ -526,7 +515,7 @@ body {
   font-size: 1vw;
   margin-left: 15%;
   line-height: 1.5vw;
-  font-weight: 100;
+  font-weight: lighter;
 }
 
 .premium_plan .optional {
@@ -539,6 +528,7 @@ body {
 .premium_plan .buy {
   margin-left: 4%;
   margin-top: 5vw;
+  text-align: center;
   background: orange;
   border-radius: 15px;
   outline: none;
@@ -561,7 +551,7 @@ body {
 }
 
 .premium_plan .buy:hover {
-  background-color: #3b82af;
+  background-color: #d68644;
 }
 
 .premium_plan .buy:active {
@@ -578,7 +568,7 @@ body {
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   color: #7796A8;
-  margin-top: 1vw;
+  margin-top: 0.2vw;
   cursor: pointer;
 }
 
@@ -598,13 +588,14 @@ body {
 }
 
 #contacts #wave {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  vertical-align: bottom;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  margin-top: 8vw;
 }
 
 #contacts #contacts_head {
