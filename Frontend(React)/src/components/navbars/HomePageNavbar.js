@@ -9,8 +9,7 @@ function Nav () {
           <script src="script.js"></script>
        {localStorage.getItem("isLoggedIn") == "true"
         ? 
-        <nav>
-        <img src = {logo} className="logo"></img>
+        <nav>        
 
         <ul className="navlist"> 
          <h3> Welcome, {localStorage.getItem("first name")}</h3>
@@ -22,7 +21,7 @@ function Nav () {
       </nav>
         :
         <nav>
-          <img src = {logo} className="logo"></img>
+          <a href="/home"><img src = {logo} className="logo"></img></a>
           <ul className="navlist"> 
             <li><a href="#start">Home</a></li>
             <li><a href="#features_part">About</a></li>

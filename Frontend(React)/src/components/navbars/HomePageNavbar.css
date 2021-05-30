@@ -3,13 +3,13 @@
   top: 0;
   width: 100%;
   height: 3vw;
-  z-index: 2;
+  z-index: 3;
   background-color: #FF9D57;
+  box-shadow: 0 0 1px;
 }
 
 #navbar nav {
-  padding-top: 10px;
-  
+  height: 3vw;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -27,9 +27,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 4vw;
-  padding-right: 1vw;
-
+  padding-left: 2.9vw;
+  padding-right: 5vw;
+ 
 }
 
 #navbar nav .navlist {
@@ -38,18 +38,22 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-top: 0.5vw;
+    
 }
 
 #navbar nav .logo {
+  -webkit-user-drag: none;
   position: relative;
   width: 20vw;
-  height: 3vw;
+  height: 2vw;
   z-index: 2;
 }
 
 #navbar nav .navlist li {
   list-style: none;
-  padding: 0 2vmin 0 2vmin;
+  
+  padding: 0.5vw 2vmin 0 2vmin;
 }
 
 #navbar nav .navlist a {
@@ -58,15 +62,15 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-weight: 200;
-  font-size: 1.3vw;
+  font-weight: 100;
+  font-size: 1.2vw;
   padding: 10px 15px 10px;
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
 }
 
 #navbar nav .navlist a:after {
-  bottom: 0;
+  bottom: 0.3vw;
   content: "";
   display: block;
   height: 0.1vw;
@@ -97,11 +101,35 @@
 }
 
 @media screen and (max-width: 1400px) {
-  #navbar {
+  nav{
     height: 4vw;
   }
+
   #navbar .navlist a {
     font-size: 15vw;
+  }
+  #navbar nav .navlist a:after {
+    bottom: 0.7vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  nav{
+    height: 4vw;
+  }
+
+  #navbar .navlist a {
+    font-size: 15vw;
+  }
+  #navbar nav .navlist a:after {
+    bottom: 1vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  #navbar nav .navlist a:after {
+    bottom: 1.5vw;
+  }
+  #navbar nav .navlist a:hover:after {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */
