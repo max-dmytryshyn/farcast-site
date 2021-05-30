@@ -8,8 +8,7 @@ class PredictionTable extends Component {
     render () {
         return <div>
                 <div className="head">
-                    <span className="bake"> Що пекти </span> 
-                    <span className="search"> Пошук <hr className="division_line"/> </span>
+                    <span className="bake"> Що пекти </span>
                 </div>                    
                     <DataList />
                     <HomePageNavbar />
