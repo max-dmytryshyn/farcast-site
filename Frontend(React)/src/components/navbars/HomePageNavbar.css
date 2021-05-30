@@ -42,7 +42,8 @@
 
 #navbar nav .logo {
   position: relative;
-  width: 300px;
+  width: 20vw;
+  height: 3vw;
   z-index: 2;
 }
 

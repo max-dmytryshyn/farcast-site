@@ -12,7 +12,7 @@ function WelcomePart() {
                     <p><span className="yours">вашого</span> бізнесу!</p>
                 </div>
             </div>
-            <button type="button" className="buy_button">Замовити сьогодні</button>
+            <button type="button" className="buy_button" href="/home#pay_plans_part">Замовити сьогодні</button>
             <img src={red_woman} className="red_woman"></img>
             <div className="first_line"></div>
         </div>
