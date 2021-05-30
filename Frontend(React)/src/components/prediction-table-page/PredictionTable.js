@@ -8,8 +8,7 @@ class PredictionTable extends Component {
         return <div id = "testone">
              <HomePageNavbar />
                 <div className="head">
-                    <span className="bake"> Що пекти </span> 
-                    <span className="search"> Пошук <hr className="division_line"/> </span>
+                    <span className="bake"> Що пекти </span>
                 </div>                    
                     <DataList />
                 </div>
