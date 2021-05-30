@@ -1,3 +1,4 @@
+
 p {
   margin-top: 2vw;
   padding-top: 3vw;
@@ -48,6 +49,7 @@ body {
 #welcome_part {
   height: 45vw;
   width: 100%;
+  padding-top: 2vw;
 }
 
 .square {
@@ -672,4 +674,5 @@ body {
   float: right;
   padding-right: 1vw;
 }
+
 /*# sourceMappingURL=Homepage.css.map */
