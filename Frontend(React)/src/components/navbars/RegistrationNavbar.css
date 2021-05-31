@@ -47,6 +47,7 @@
     width: 20vw;
     height: 2vw;
     z-index: 3;
+    padding-left: 2.5vw;
   }
   
   #registration-navbar nav .register-navlist li {

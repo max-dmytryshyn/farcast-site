@@ -127,6 +127,7 @@ h3#welcome:hover{
   width: 20vw;
   height: 2vw;
   z-index: 3;
+  padding-left: 2.5vw;
   }
   
   #login-navbar nav .login-navlist li {
