@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import "./Data.css"
+import data from "./predictions_sample.json"
+
 
 class DataList extends Component {
     
@@ -21,7 +23,7 @@ class DataList extends Component {
         var current_hour = this.state.data[0] - 1;
         return (
             <div className="databox">
-            {this.state.data.map(postDetail => {
+            {data.map(postDetail => {
                 var change_hour = false;
                 if(postDetail.hour != current_hour) {
                     current_hour = postDetail.hour;   
@@ -29,45 +31,17 @@ class DataList extends Component {
                 } 
                 return(<div className="data"> 
                     {change_hour && postDetail.hour < 9 &&
-                    <span className="time"> 0{postDetail.hour}.00 - 0{postDetail.hour + 1}.00 <hr/></span>} 
+                    <div className="time"> 0{postDetail.hour}.00 - 0{postDetail.hour + 1}.00 <hr/></div>} 
                     {change_hour && postDetail.hour == 9 &&
-                    <span className="time"> 0{postDetail.hour}.00 - {postDetail.hour + 1}.00 <hr/></span>}
+                    <div className="time" > 0{postDetail.hour}.00 - {postDetail.hour + 1}.00 <hr/></div>}
                     {change_hour && postDetail.hour > 9 &&
-                    <span className="time"> {postDetail.hour}.00 - {postDetail.hour + 1}.00 <hr/></span>}                                                                                                      
+                    <div className="time" > {postDetail.hour}.00 - {postDetail.hour + 1}.00 <hr/></div>}                                                                                                      
                     <span>{postDetail.product.name}: </span>
                     <span>{postDetail.amount} шт</span>
 
                     <hr className="items_division"/>
                 </div>
-                )
-                
-                    
-                if (postDetail.hour < 9) {                  
-                    return <div className="data">
-                            <div> 0{postDetail.hour}.00 - {postDetail.hour + 1}.00 <hr/></div>                                      
-                                <span>{postDetail.product.name}: </span>
-                                <span>{postDetail.amount} шт</span>
-
-                                <hr className="items_division"/>
-                            </div>
-                }
-                else if (postDetail.hour == 9) {
-                    return <div className="data">                            
-                                <div> 0{postDetail.hour}.00 - {postDetail.hour + 1}.00 <hr/></div>
-                                <span>{postDetail.product.name}: </span>
-                                <span>{postDetail.amount} шт</span>
-                                <hr className="items_division"/>
-                            </div>
-                }
-                else if (postDetail.hour > 9) {                    
-                    return <div className="data">                            
-                                <div>{postDetail.hour}.00 - {postDetail.hour + 1}.00 <hr/></div>
-                                <span>{postDetail.product.name}: </span>
-                                <span>{postDetail.amount} шт</span>
-                                <hr className="items_division"/>
-                            </div>
-                }  
-                    
+                )            
         })}
             
         </div>

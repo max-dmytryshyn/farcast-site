@@ -54,8 +54,14 @@ html {
 }
 
 .data{
+
     margin: 0 1vw 0 1vw;
     font-size: 1.3vw;
+}
+
+.time{
+    text-align: center;
+    font-size: 2vw;
 }
 
 hr{
