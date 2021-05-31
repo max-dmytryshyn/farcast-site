@@ -7,8 +7,9 @@ class Profile extends React.Component {
 
     render() {
         return (
+            <div><ProfileNavbar/>
             <div className="Settings">
-                <ProfileNavbar/>
+                
                 <div class="container-profile">
                     <form class="form" id="settings">
                         <h1 class="form__title">Personal Account</h1>
@@ -46,6 +47,7 @@ class Profile extends React.Component {
                         </div>
                     </form>
                 </div>
+            </div>
             </div>
         )
     }
