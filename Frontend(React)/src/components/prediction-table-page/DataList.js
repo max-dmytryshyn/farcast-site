@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import "./Data.css"
-import data from "./predictions_sample.json"
 
 
 class DataList extends Component {
@@ -23,7 +22,7 @@ class DataList extends Component {
         var current_hour = this.state.data[0] - 1;
         return (
             <div className="databox">
-            {data.map(postDetail => {
+            {this.state.data.map(postDetail => {
                 var change_hour = false;
                 if(postDetail.hour != current_hour) {
                     current_hour = postDetail.hour;   
