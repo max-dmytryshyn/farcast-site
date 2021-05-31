@@ -1,0 +1,37 @@
+#creating groupBy dataframe with amount of sales during one hour
+sales_data = bakery_data.groupby(['date', 'season_id', 'month', 'weekday_weekend_id', 'day_of_week', 'period_day_id',
+                                  'hour', 'id']
+                                ).apply(lambda df: df.hour.count())
+#df = df.groupby(['Symbol','Year']).count().unstack(fill_value=0).stack()
+sales_data = pd.DataFrame(sales_data)
+sales_data.reset_index(inplace=True)
+sales_data.rename(columns={0: 'amount'}, inplace=True)
+sales_data
+
+#creating groupBy dataframe with amount of sales during one hour for all items
+all_sales_data = bakery_data.groupby(['date', 'season_id', 'month', 'weekday_weekend_id',
+                                  'day_of_week', 'period_day_id','hour', 'id'
+                                 ]).apply(lambda df: df.hour.count()).unstack(fill_value=0).stack()
+
+#df = df.groupby(['Symbol','Year']).count().unstack(fill_value=0).stack()
+all_sales_data = pd.DataFrame(all_sales_data)
+all_sales_data.reset_index(inplace=True)
+all_sales_data.rename(columns={0: 'amount'}, inplace=True)
+all_sales_data.head(15)
+
+val_data = all_sales_data.loc[(all_sales_data.date == pd.to_datetime('2016-04-11'))]
+                           #|(all_sales_data.date == pd.to_datetime('2016-04-12'))
+                           #|(all_sales_data.date == pd.to_datetime('2016-04-13'))
+                           #|(all_sales_data.date == pd.to_datetime('2016-04-14'))
+                           #|(all_sales_data.date == pd.to_datetime('2016-04-15'))
+                           #|(all_sales_data.date == pd.to_datetime('2016-04-16'))
+                           #|(all_sales_data.date == pd.to_datetime('2016-04-17'))]
+
+
+train_data = sales_data.loc[(sales_data.date != pd.to_datetime('2016-04-11'))]
+     #                      |(sales_data.date != pd.to_datetime('2016-04-12'))
+    #                       |(sales_data.date != pd.to_datetime('2016-04-13'))
+   #                        |(sales_data.date != pd.to_datetime('2016-04-14'))
+  #                         |(sales_data.date != pd.to_datetime('2016-04-15'))
+ #                          |(sales_data.date != pd.to_datetime('2016-04-16'))
+#                           |(sales_data.date != pd.to_datetime('2016-04-17'))]
