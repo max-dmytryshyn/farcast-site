@@ -1,10 +1,9 @@
 import React from "react"
 import logo from "../../images/homepage_images/farcast_logo.svg"
+import "./ProfileNavbar.css"
 import { stack as Menu } from 'react-burger-menu'
-import "./HomePageNavbar.css"
 
-
-class Nav extends React.Component {
+class ProfileNavbar extends React.Component {
   handleLoginOut = () => {
     localStorage.removeItem("email");
     localStorage.removeItem("username");
@@ -29,23 +28,17 @@ class Nav extends React.Component {
               <a id="profile" href="/profile" className="menu-item">Profile</a>
               <a id="sing-out" href="/home" className="menu-item" onClick={this.handleLoginOut}>Sign out</a>
             </Menu>
-            <div id="navbar"> 
+            <div id="profile-navbar"> 
               <nav>
-                <img src = {logo} className="logo"></img>
+              <a href="/home"><img src = {logo} className="logo-profile"></img></a>
                 <h3 id="welcome"> Welcome, {localStorage.getItem("first name")}</h3>
               </nav>
             </div>
           </div>
           :
-          <div id="navbar"> 
+          <div id="profile-navbar"> 
             <nav>
-              <img src = {logo} className="logo"></img>
-              <ul className="navlist"> 
-                <li><a href="#start">Home</a></li>
-                <li><a href="#features_part">About</a></li>
-                <li><a href="#pay_plans_part">Prices</a></li>
-                <li><a href="/login">Sign in</a></li>
-              </ul>
+            <a href="/home"><img src = {logo} className="logo-profile"></img></a>
             </nav>
           </div>
         }
@@ -53,4 +46,4 @@ class Nav extends React.Component {
     )
   }
 }
-export default Nav
+export default ProfileNavbar

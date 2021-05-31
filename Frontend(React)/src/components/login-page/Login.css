@@ -8,6 +8,7 @@
 }
 
 .boxOne { 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin: 0 auto; 
     margin-top: 6%;
     text-align:  center;
@@ -41,6 +42,7 @@
         border-radius: 15px;
         outline: none;
         width: 70%;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
 .Remember-forgot-field {
@@ -49,7 +51,7 @@
     margin-top: 1%;
     padding: 2%;
     border-radius: 15px;
-    margin-left: 15%;
+    margin-left: 16%;
     font-size: 26%;
     text-align:  center;
     color: #8E8E8E;
@@ -62,6 +64,7 @@
     background-color: #ffffff;
     border-radius: 15px;
     border-color: #000000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .btn:active {
@@ -71,6 +74,7 @@
 .form-check-label {
     margin-right: 10%;
     color: #000000;
+    white-space: nowrap;
     
 }
 
@@ -82,9 +86,19 @@
     color: #000000;
 }
 
+.Forgot-url:hover {
+    color: #800000;
+    text-decoration: none;
+   }
+
 .Create-url {
     color: #000000;
     text-decoration: underline;
+}
+
+.Create-url:hover {
+    color: #800000;
+    text-decoration: none;
 }
 
 .Create-an-account {
@@ -107,4 +121,10 @@
 .form-check-input[type=checkbox] {
     border-radius: .25em;
     margin-right: 8%;
+    
+}
+
+.form-check-input:checked {
+    background-color:#800000;
+    border-color: #ffffff;
 }

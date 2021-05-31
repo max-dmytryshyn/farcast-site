@@ -7,7 +7,6 @@ import PayPlansPart from "./body-parts/PayPlansPart"
 function Body() {
     return (
         <div>
-            <img src="../../images/homepage_images/logo.svg" />
             <WelcomePart />
             <FeaturesPart />
             <PayPlansPart />

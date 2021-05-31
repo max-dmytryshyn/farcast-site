@@ -1,11 +1,11 @@
+
 p {
-  margin-top: 30px;
-  padding-top: 70px;
+  margin-top: 2vw;
+  padding-top: 3vw;
 }
 
-
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0.6vw;
 }
 
 ::-webkit-scrollbar-track {
@@ -20,7 +20,17 @@ p {
   background: #555;
 }
 
-html, footer {
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #FF9D57;
+  color: black;
+  font-family: Roboto;
+}
+
+footer {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -39,6 +49,7 @@ body {
 #welcome_part {
   height: 45vw;
   width: 100%;
+  padding-top: 2vw;
 }
 
 .square {
@@ -54,22 +65,22 @@ body {
 
 .content {
   font-size: 7vw;
-  line-height: 2vw;
-  padding-top: 15px;
-  padding-left: 30px;
+  line-height: 1.5vw;
+  padding-top: 2vw;
+  padding-left: 2vw;
 }
 
 .red_woman {
   -webkit-user-drag: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: relative;
   width: 15vw;
   height: 25vw;
   left: 60%;
-  bottom: 21vw;
+  bottom: 22vw;
 }
 
 .first_line {
@@ -96,30 +107,30 @@ body {
   color: black;
   font-size: 1vw;
   left: 75.6%;
-  bottom: 48vw;
+  bottom: 37vw;
   cursor: pointer;
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-animation: ease;
-          animation: ease;
+  animation: ease;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .buy_button:hover {
-  background-color: #31414b;
+  background-color: #c9703c;
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .buy_button:active {
   -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 #features_part {
@@ -140,14 +151,14 @@ body {
 .yellow_man {
   -webkit-user-drag: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: relative;
   width: 15vw;
   height: 25vw;
   left: 10%;
-  bottom: 22.9vw;
+  bottom: 23vw;
 }
 
 .box1 {
@@ -260,19 +271,12 @@ body {
   width: 100%;
 }
 
-.bubbles {
-  position: relative;
-  z-index: -1;
-  width: 100%;
-  bottom: 50vw;
-}
-
 .newbie_plan {
   display: inline-block;
   background-color: #FFD2B1;
   width: 23vw;
   height: 37vw;
-  border-radius: 15px;
+  border-radius: 1vw;
   margin-left: 7vw;
 }
 
@@ -286,7 +290,7 @@ body {
   text-align: center;
   font-size: 2vw;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 1vw;
 }
 
 .newbie_plan .cost {
@@ -324,7 +328,6 @@ body {
 .newbie_plan .buy {
   margin-left: 4%;
   margin-top: 5vw;
-  padding-bottom: 1px;
   text-align: center;
   background: orange;
   border-radius: 15px;
@@ -338,22 +341,22 @@ body {
   height: 2.1vw;
   cursor: pointer;
   -webkit-animation: ease;
-          animation: ease;
+  animation: ease;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .newbie_plan .buy:hover {
-  background-color: #3b82af;
+  background-color: #d68644;
 }
 
 .newbie_plan .buy:active {
   -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .newbie_plan .extra {
@@ -363,9 +366,9 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #7796A8;
-  margin-top: 1vw;
+  margin-top: 0.2vw;
   cursor: pointer;
 }
 
@@ -374,7 +377,7 @@ body {
   background-color: #FFD2B1;
   width: 23vw;
   height: 37vw;
-  border-radius: 15px;
+  border-radius: 1vw;
   margin-left: 7vw;
 }
 
@@ -388,7 +391,7 @@ body {
   text-align: center;
   font-size: 2vw;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 1vw;
 }
 
 .standart_plan .cost {
@@ -426,6 +429,7 @@ body {
 .standart_plan .buy {
   margin-left: 4%;
   margin-top: 5vw;
+  text-align: center;
   background: orange;
   border-radius: 15px;
   outline: none;
@@ -438,22 +442,22 @@ body {
   height: 2.1vw;
   cursor: pointer;
   -webkit-animation: ease;
-          animation: ease;
+  animation: ease;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .standart_plan .buy:hover {
-  background-color: #3b82af;
+  background-color: #d68644;
 }
 
 .standart_plan .buy:active {
   -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .standart_plan .extra {
@@ -463,9 +467,9 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #7796A8;
-  margin-top: 1vw;
+  margin-top: 0.2vw;
   cursor: pointer;
 }
 
@@ -474,8 +478,8 @@ body {
   background-color: #FFD2B1;
   width: 23vw;
   height: 37vw;
-  border-radius: 15px;
-  margin-left: 6.5vw;
+  border-radius: 1vw;
+  margin-left: 7vw;
 }
 
 .premium_plan img {
@@ -488,14 +492,7 @@ body {
   text-align: center;
   font-size: 2vw;
   font-weight: 500;
-  margin-top: 20px;
-}
-
-.premium_plan .name {
-  text-align: center;
-  font-size: 2vw;
-  font-weight: 500;
-  margin-top: 20px;
+  margin-top: 1vw;
 }
 
 .premium_plan .cost {
@@ -520,7 +517,7 @@ body {
   font-size: 1vw;
   margin-left: 15%;
   line-height: 1.5vw;
-  font-weight: 100;
+  font-weight: lighter;
 }
 
 .premium_plan .optional {
@@ -533,6 +530,7 @@ body {
 .premium_plan .buy {
   margin-left: 4%;
   margin-top: 5vw;
+  text-align: center;
   background: orange;
   border-radius: 15px;
   outline: none;
@@ -545,22 +543,22 @@ body {
   height: 2.1vw;
   cursor: pointer;
   -webkit-animation: ease;
-          animation: ease;
+  animation: ease;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .premium_plan .buy:hover {
-  background-color: #3b82af;
+  background-color: #d68644;
 }
 
 .premium_plan .buy:active {
   -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .premium_plan .extra {
@@ -570,9 +568,9 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #7796A8;
-  margin-top: 1vw;
+  margin-top: 0.2vw;
   cursor: pointer;
 }
 
@@ -580,8 +578,7 @@ body {
   -webkit-user-drag: none;
   position: absolute;
   width: 15vw;
-  height: 25vw;
-  padding-top: 20vw;
+  padding-top: 13.8vw;
   left: 27vw;
 }
 
@@ -593,13 +590,14 @@ body {
 }
 
 #contacts #wave {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  vertical-align: bottom;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  margin-top: 8vw;
 }
 
 #contacts #contacts_head {
@@ -629,7 +627,7 @@ body {
 
 #contacts #contacts_column ul {
   -webkit-padding-start: 2vw;
-          padding-inline-start: 2vw;
+  padding-inline-start: 2vw;
   list-style: none;
   font-weight: 200;
 }
@@ -676,6 +674,5 @@ body {
   float: right;
   padding-right: 1vw;
 }
-/*# sourceMappingURL=homepage.css.map */
 
-
+/*# sourceMappingURL=Homepage.css.map */

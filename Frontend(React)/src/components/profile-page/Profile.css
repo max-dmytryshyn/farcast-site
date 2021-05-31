@@ -1,12 +1,13 @@
 .Settings {
-  padding-top: 4%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   background-color: #FF9D57;
+  
 }
 
-.container {
+.container-profile {
+  padding-top: 1%;
   width: 100%;
   max-width: 1170px;
   padding-bottom: 3%;
@@ -14,6 +15,7 @@
   background: #FFD2B1;
   margin: 0 auto;
   color: rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .h1,
@@ -37,6 +39,7 @@ h1.form__title {
   border: 1px solid transparent;
   outline: none;
   font-size: 1.1rem;
+  margin-right: 100%;
 }
 
 .btn-primary-profile:active {
@@ -49,26 +52,46 @@ h1.form__title {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 5%;
   padding-right: 25%;
 }
 
-.h3,
-h3.text {
-  font-size: 1.75rem;
-  margin-left: 10%;
+h3.first-name-text, h3.last-name-text {
+  position: absolute;
+  left: 40%;
   font-weight: 400;
+  word-wrap: break-word;
+  max-width:24%;
 }
 
-.h3,
-h3.text_two {
-  margin-left: 30px;
+h3.email-text {
+  position: absolute;
+  left: 40%;
   font-weight: 400;
+  word-wrap: break-word;
+  max-width:24%;
+  height: 30px;
+}
+
+h3.login-profile-text {
+  position: absolute;
+  left: 40%;
+  font-weight: 400;
+  word-wrap: break-word;
+  max-width:24%;
+}
+
+h3.password-profile-text {
+  position: absolute;
+  left: 40%;
+  font-weight: 400;
+  word-wrap: break-word;
+  max-width:24%;
 }
 
 .h5,
 h5.text {
   color: #000000;
+  padding: auto;
 }
 
 hr {

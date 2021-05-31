@@ -8,6 +8,7 @@
   }
   
   .containerRegister {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 100%;
     max-width: 1170px;
     padding-bottom: 3%;
@@ -70,6 +71,7 @@
     outline: none;
     background-color: #ffffff;
     border: 1px solid transparent;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   }
   
   .form__input.focus, .form__input:focus {
@@ -95,7 +97,7 @@
     border: 1px solid transparent;
     outline: none;
     font-size: 1.1rem;
-   /* border-color: #ffffff;*/
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   }
   
   .btn-primaryOne:active {
