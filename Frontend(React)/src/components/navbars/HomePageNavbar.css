@@ -194,9 +194,19 @@ h3#welcome:hover{
     bottom: 0.7vw;
   }
 }
-@media screen and (max-width: 1000px) {
-  nav{
-    height: 4vw;
+@media screen and (max-width: 1024px) {
+  #navbar{
+    height: 5vw;
+    
+  }
+  #navbar nav .navlist a{
+    top: 1vw;
+    font-size: 2vw;
+  }
+  #navbar nav .logo{
+    top: 1vw;
+    width: 20vw;
+    height: 20vw;
   }
 
   #navbar nav .navlist a {
@@ -206,7 +216,21 @@ h3#welcome:hover{
     bottom: 1vw;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
+  #navbar{
+    height: 7vw;
+    
+  }
+  #navbar nav .navlist a{
+    top: 6vw;
+    font-size: 3vw;
+  }
+  #navbar nav .logo{
+    top: 2vw;
+    width: 20vw;
+    height: 20vw;
+  }
+  
   #navbar nav .navlist a {
     padding-bottom: 1.7vw;
   }
@@ -216,4 +240,13 @@ h3#welcome:hover{
   #navbar nav .navlist a:hover:after {
     width: 100%;
   }
+}
+@media screen and (max-width: 425px) {
+  #navbar nav .navlist{
+    display: none;
+  }
+  .logo {
+    display: flex ;
+  }
+  
 }

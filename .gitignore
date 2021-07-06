@@ -134,3 +134,5 @@ dmypy.json
 *.scss
 *.map
 
+node_modules/.bin/esparse
+**/node_modules
