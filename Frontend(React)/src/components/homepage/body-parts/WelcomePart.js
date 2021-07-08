@@ -1,10 +1,12 @@
 import React from "react"
 
 import red_woman from "../../../images/homepage_images/red_woman.svg"
+import circle_red_woman from "../../../images/homepage_images/circle_red_woman.png"
 
 function WelcomePart() {
     return (
         <div id="welcome_part">
+            <img src={circle_red_woman} className="circle_red_woman"></img>
             <div className="square"> 
                 <div className="content">
                     <p>Вигідне</p>
@@ -15,6 +17,7 @@ function WelcomePart() {
             
             <button type="button" className="buy_button" type="button">Замовити сьогодні</button>
             <img src={red_woman} className="red_woman"></img>
+            
             <div className="first_line"></div>
         </div>
     )
