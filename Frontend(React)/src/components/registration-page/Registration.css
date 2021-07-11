@@ -73,6 +73,7 @@
     background-color: #ffffff;
     border: 1px solid transparent;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding-right: 80px;
   }
   
   .form__input.focus, .form__input:focus {
@@ -120,6 +121,10 @@
       padding-top: 2%;
     }
 
+    .form__input {
+      padding-right: 20px;
+    }
+
     .h1, h1.form__title__head {
       font-size: 3rem;
       padding-bottom: 1%;
@@ -137,9 +142,17 @@
       padding-right: 1%;
       padding-left: 1%;
     }
+    .form__input {
+      padding-right: 0;
+    }
+
   }
 
   @media (max-width: 425px) {
+    .form__input {
+      padding-right: 40px;
+    }
+
     .h5, h5 {
       padding-top: 3%;
     }   
