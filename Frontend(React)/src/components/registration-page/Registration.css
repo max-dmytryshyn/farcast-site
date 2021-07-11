@@ -5,6 +5,7 @@
     align-items: flex-start;
     justify-content: center;
     background-color: #FF9D57;
+    /*padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1600-320)));*/
   }
   
   .containerRegister {
@@ -19,8 +20,8 @@
   }
   
   .form_one {
-    padding-left: 7%;
-    padding-right: 20%;
+    padding-right: 5%;
+    padding-left: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,8 +29,8 @@
   
   .form_two {
     padding-top: 2%;
-    padding-right: 20%;
-    padding-left: 11%;
+    padding-right: 5%;
+    padding-left: 5%;
     display: flex;
     flex-direction: row;  
     justify-content: space-between;
@@ -37,21 +38,21 @@
   
   .form_three {
     padding-top: 2%;
-    padding-right: 20%;
-    padding-left: 11%;
+    padding-right: 5%;
+    padding-left: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   
   .h5, h5 {
-    font-size: 1.25rem;
-    margin-left: 7rem;
+   font-size: 1.25rem; 
+    /*font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1600-320)));*/
     font-weight: 400;
   }
   
-  .h1, h1 {
-    font-size: 3.5rem;
+  .h1, h1.form__title__head  {
+   font-size: 3.5rem;
     text-align: center;
     padding-top: 1%;
     padding-bottom: 4%;
@@ -63,8 +64,8 @@
     border-radius: 15px;
     transition: background 0.2s, border-color 0.2s;
     padding: 0.75rem;
-    width: 270px;
-    margin-left: 110px;
+    /*width: 270px;*/
+    width: 100%;
     font-size: 110%;
     border: 1px solid #ced4da;
     box-sizing: border-box;
@@ -81,8 +82,10 @@
   
   .form {
     margin: 0;
-    padding-top: 5%;
+    padding-top: 3%;
   }
+
+  
   
   .btn-primaryOne:not(:disabled):not(.disabled).active, .btn-primaryOne:not(:disabled):not(.disabled):active, .show>.btn-primaryOne.dropdown-toggle {
     width: 300px; 
@@ -92,7 +95,7 @@
     background-color: #ffffff;
     margin: 0 auto;
     margin-top: 5%;
-    margin-left: 37%;
+    
     cursor: pointer;
     border: 1px solid transparent;
     outline: none;
@@ -104,3 +107,53 @@
     transform: scale(0.98);
   }
 
+  .register-button {
+    text-align: center;
+  }
+
+  .form__input-group {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .form {
+      padding-top: 2%;
+    }
+
+    .h1, h1.form__title__head {
+      font-size: 3rem;
+      padding-bottom: 1%;
+      padding-top: 1%;
+    }
+    
+    .btn-primaryOne:not(:disabled):not(.disabled).active, .btn-primaryOne:not(:disabled):not(.disabled):active, .show>.btn-primaryOne.dropdown-toggle { 
+    width: 223px;
+    margin-top: 5%;
+    }
+  }
+
+  @media (max-width: 540px) {
+    .form_one, .form_two, .form_three  {
+      padding-right: 1%;
+      padding-left: 1%;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .h5, h5 {
+      padding-top: 3%;
+    }   
+
+    .h1, h1.form__title__head {
+      font-size: 2.5rem;
+    }
+
+    .form_one, .form_two, .form_three{
+    flex-direction: column;
+    }
+
+    .btn-primaryOne:not(:disabled):not(.disabled).active, .btn-primaryOne:not(:disabled):not(.disabled):active, .show>.btn-primaryOne.dropdown-toggle { 
+    width: auto;
+    margin-top: 7%;
+    }
+  }

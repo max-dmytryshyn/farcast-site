@@ -53,7 +53,7 @@ class Registration extends React.Component {
                 <RegistrationNavbar/>
                 <div class="containerRegister">
                     <form class="form" id="register">
-                        <h1 class="form__title">Registration</h1>
+                        <h1 class="form__title__head">Registration</h1>
                         <form class="form_one" id="formOne">
                         <div class="form__message form__message--error"></div>
                         <div class="form__input-group">
@@ -68,9 +68,10 @@ class Registration extends React.Component {
                         </div>
                         </form>
                         <form class="form_two" id="formTwo">
-                        <div class="form__input-groups">
+                        <div class="form__message form__message--error"></div>
+                        <div class="form__input-group">
                             <h5 class="surname">Surname</h5>
-                            <input type="text" class="form__input" autofocus placeholder="Enter surname"  onChange={this.setLastName}/>
+                            <input type="text" class="form__input"  autofocus placeholder="Enter surname"  onChange={this.setLastName}/>
                             <div class="form__input-error-message"></div>
                         </div>
                         <div class="form__input-group">
@@ -80,6 +81,7 @@ class Registration extends React.Component {
                         </div>
                         </form>
                         <form class="form_three" id="formThree">
+                        <div class="form__message form__message--error"></div>
                         <div class="form__input-group">
                             <h5 class="username">Login</h5>
                             <input type="text" class="form__input" autofocus placeholder="Enter login"  onChange={this.setUsername}/>
