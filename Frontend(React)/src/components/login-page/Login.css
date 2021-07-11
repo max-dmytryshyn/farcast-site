@@ -75,7 +75,6 @@
     margin-right: 10%;
     color: #000000;
     white-space: nowrap;
-    
 }
 
 .Create-url{
@@ -127,4 +126,109 @@
 .form-check-input:checked {
     background-color:#800000;
     border-color: #ffffff;
+}
+
+
+@media (max-width: 610px) {
+    .boxOne {
+       
+       margin-left: 80px ;
+    }
+
+}
+
+@media (max-width: 425px) { 
+    .boxOne {
+        height: 100%;
+        width: 95%;
+        margin-left: 12px; 
+        margin-top: 4%;
+    }
+
+    .form-control {
+        width: 80%;
+    }
+
+    .Username,  .Password{
+        padding-left: 11%;
+    }
+
+    .form-check-input[type=checkbox] {
+        margin-right: 2%;
+    }
+
+    .form-check-label { 
+        margin-right: 0;
+    }
+
+    .Remember-forgot-field {
+        flex-direction: column;
+        margin-left: 0;
+        font-size: 40%;
+        
+    }
+
+    .btn:not(:disabled):not(.disabled) { 
+        font-size: 40%;
+        font-weight: 500;
+    }
+
+    .Create-an-account {
+        display: flex;
+        flex-direction: column;
+        font-size: 40%;
+    }
+    .Create-url {
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .boxOne { 
+        margin-left: 10px ;
+     }
+    .btn:not(:disabled):not(.disabled) { 
+       width: 95%;
+    }
+}
+
+@media (max-width: 320px) {
+    .boxOne {
+        height: 100%;
+        width: 97%;
+        margin-left: 5px;
+    }
+    
+    .Username,  .Password {
+        padding-left: 7%;
+    }
+
+    .form-control {
+        width: 90%;
+    }
+
+    .form-check-input[type=checkbox] {
+        margin-right: 3%;
+    }
+
+    .Remember-forgot-field {
+        font-size: 35%;
+    }
+
+    .Forgot-url { 
+        font-weight: 500;
+    }
+
+    .btn:not(:disabled):not(.disabled) {
+        width: 100%;
+    }
+
+    .Create-an-account {
+        font-size: 35%;
+    }
+
+    .Create-url {
+        font-weight: 500;
+    }
 }
