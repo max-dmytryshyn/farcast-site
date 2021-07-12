@@ -8,7 +8,7 @@
 
 .container-profile {
   padding-top: 1%;
-  width: 100%;
+  width: 95%;
   max-width: 1170px;
   padding-bottom: 3%;
   border-radius: 15px;
@@ -34,12 +34,11 @@ h1.form__title {
   padding: 0.45rem;
   border-radius: 15px;
   background-color: #ffffff;
-  margin-left: 100%;
   cursor: pointer;
   border: 1px solid transparent;
   outline: none;
   font-size: 1.1rem;
-  margin-right: 100%;
+  
 }
 
 .btn-primary-profile:active {
@@ -47,55 +46,116 @@ h1.form__title {
 }
 
 .check_box {
-  padding: 0.5%;
+  padding: 1.5%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-right: 25%;
+
 }
 
-h3.first-name-text, h3.last-name-text {
-  position: absolute;
+
+h3.login-profile-text, h3.password-profile-text, h3.first-name-text, h3.last-name-text {
+  position: static;
   left: 40%;
   font-weight: 400;
   word-wrap: break-word;
-  max-width:24%;
+  max-width:40%;
 }
 
 h3.email-text {
-  position: absolute;
+  position: static;
   left: 40%;
   font-weight: 400;
   word-wrap: break-word;
-  max-width:24%;
+  max-width:40%;
   height: 30px;
-}
-
-h3.login-profile-text {
-  position: absolute;
-  left: 40%;
-  font-weight: 400;
-  word-wrap: break-word;
-  max-width:24%;
-}
-
-h3.password-profile-text {
-  position: absolute;
-  left: 40%;
-  font-weight: 400;
-  word-wrap: break-word;
-  max-width:24%;
 }
 
 .h5,
 h5.text {
   color: #000000;
   padding: auto;
+  font-size: 1.55rem
 }
 
 hr {
   border: none;
   height: 2px;
   background-color: #000000;
+}
+
+@media (max-width: 1024px) {
+  .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
+    margin-left: 0;
+    margin-right: 0;
+   }
+   .container-profile {
+    height: 100%;
+    width: 95%;
+    padding-bottom: 5%;
+  }
+  .check_box {
+    padding-right: 0;
+    padding: 1.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-profile {
+    height: 100%;
+    width: 98%;
+    padding-bottom: 2%;
+  }
+  .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
+  margin-left: 0;
+  margin-right: auto;
+  width: 195px;
+  }
+}
+
+@media (max-width: 630px) {
+  .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
+    width: 170px;
+   }
+   .h5, h5 {
+    font-size: 1.35rem
+  }
+}
+
+@media (max-width: 576px) { 
+  .h1, h1.form__title {
+    font-size: 3rem;
+  }
+  
+  .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
+    width: 150px;
+   }
+}
+
+
+@media (max-width: 480px) {
+  .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
+    width: 110px;
+   }
+}
+@media (max-width: 425px) {
+  .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
+    width: 105px;
+    font-weight: 400;
+   }
+   .h1, h1.form__title {
+    font-size: 2.5rem;
+    font-weight: 400;
+   }
+}
+@media (max-width: 375px) {
+  .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
+    width: 95px;
+   }
+}
+@media (max-width: 320px) {
+  .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
+    width: 80px;
+   }
 }
