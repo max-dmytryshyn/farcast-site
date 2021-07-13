@@ -2,14 +2,12 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 3vw;
-  z-index: 3;
   background-color: #FF9D57;
-  box-shadow: 0 0 1px;
-  }
+  box-shadow: 0 0 3px;
+  z-index: 3;
+}
   
   #profile-navbar nav {
-    height: 3vw;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -27,8 +25,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-left: 2.9vw;
-    padding-right: 5vw;
+    padding-left: 3vw;
   }
   
   #profile-navbar nav .profile-navlist {
@@ -42,11 +39,8 @@
   
   #profile-navbar nav .logo-profile {
     -webkit-user-drag: none;
-    position: relative;
-    width: 20vw;
-    height: 2vw;
-    z-index: 3;
-    padding-left: 2.5vw;
+    width: 18vw;
+    height: 3vw;
   }
   
   #profile-navbar nav .profile-navlist li {
@@ -97,37 +91,142 @@
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  
+
+@media (max-width: 1440px) { 
+  .bm-burger-button {
+    top: 10px;
+  }
+
+  #profile-navbar nav .logo-profile {
+    height: 4vw;
+    width: 23vw;
+  }
  
-@media screen and (max-width: 1400px) {
-  nav{
+  #profile-navbar {
     height: 4vw;
   }
-
-  #profile-navbar .profile-navlist a {
-    font-size: 15vw;
-  }
-  #profile-navbar nav .profile-navlist a:after {
-    bottom: 0.7vw;
-  }
 }
-@media screen and (max-width: 1000px) {
-  nav{
+
+@media (max-width: 1024px) { 
+  #profile-navbar nav .logo-profile {
     height: 4vw;
+    width: 30vw;
+    margin-top: 10px;
   }
 
-  #profile-navbar .profile-navlist a {
-    font-size: 15vw;
+  #profile-navbar {
+    height: 5vw;
   }
-  #profile-navbar nav .profile-navlist a:after {
-    bottom: 1vw;
+
+  h3#welcome {
+    top: 1%;
   }
 }
-@media screen and (max-width: 700px) {
-  #profile-navbar nav .profile-navlist a:after {
-    bottom: 1.5vw;
+
+@media (max-width: 768px) { 
+  #profile-navbar nav .logo-profile {
+    height: 5vw;
+    width: 33vw;
   }
-  #profile-navbar nav .profile-navlist a:hover:after {
-    width: 100%;
+
+  #profile-navbar {
+    height: 5vw;
   }
+  h3#welcome {
+    top: 0;
+    right: 18%;
+  }
+
+  .bm-burger-button {
+    top: 5px;
+    left: 90%;
+    height: 30px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 670px) { 
+  .bm-burger-button {
+    height: 25px;
+    width: 35px;
+  }
+}
+
+@media (max-width: 576px) { 
+#profile-navbar nav .logo-profile {
+  height: 5vw;
+  width: 35vw;
+}
+
+#profile-navbar {
+  height: 6vw;
+}
+}
+
+@media (max-width: 500px) { 
+#profile-navbar nav .logo-profile {
+  height: 6vw;
+  width: 40vw;
+}
+
+#profile-navbar {
+  height: 7vw;
+}
+}
+
+@media (max-width: 425px) { 
+#profile-navbar nav .logo-profile {
+  height: 4vw;
+  width: 30vw;
+}
+
+#profile-navbar {
+  height: 8vw;
+}
+
+h3#welcome {
+  right: 25%;
+}
+
+.bm-burger-button {
+  left: 88%;
+  top: 4px;
+}
+}
+
+@media (max-width: 375px) { 
+#profile-navbar nav .logo-profile {
+  height: 5vw;
+  width: 27vw;
+}
+
+#profile-navbar {
+  height: 9vw;
+}
+h3#welcome {
+  word-wrap: break-word;
+  max-width: 52%;
+  right: 15%;
+}
+
+.bm-burger-button {
+  left: 86%;
+  top: 2.5px;
+}
+}
+
+@media (max-width: 325px) { 
+#profile-navbar nav .logo-profile {
+  height: 3vw;
+  width: 20vw;
+}
+
+#profile-navbar {
+  height: 10vw;
+}
+
+h3#welcome {
+  max-width: 60%;
+  right: 15%;
+}
 }
