@@ -6,7 +6,7 @@
   z-index: 3;
   background-color: #FF9D57;
   box-shadow: 0 0 3px;
-  }
+}
 
   #registration-navbar nav {
     -webkit-user-select: none;
@@ -37,9 +37,9 @@
   }
  
   #registration-navbar nav .logo-registration {
+    -webkit-user-drag: none;
     height: 3vw;
     width: 18vw;
-    padding-left: 0; 
   }
   
   #registration-navbar nav .register-navlist li {
@@ -101,8 +101,7 @@
       height: 4vw;
     }
   }
-
-    
+ 
   @media (max-width: 1024px) { 
     #registration-navbar nav .logo-registration {
       height: 5vw;
@@ -157,7 +156,6 @@
     height: 8vw;
   }
 }
-
 
 @media (max-width: 375px) { 
   #registration-navbar nav .logo-registration {
