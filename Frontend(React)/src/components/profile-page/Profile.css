@@ -55,7 +55,7 @@ h1.form__title {
 }
 
 
-h3.login-profile-text, h3.password-profile-text, h3.first-name-text, h3.last-name-text {
+h3.login-profile-text, h3.password-profile-text, h3.first-name-text, h3.last-name-text, h3.address-text, h3.mobile-phone-text {
   position: static;
   left: 40%;
   font-weight: 400;
