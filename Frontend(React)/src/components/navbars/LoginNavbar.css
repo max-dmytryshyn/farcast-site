@@ -85,31 +85,26 @@ h3#welcome:hover{
     height: 3vw;
     z-index: 2;
     background-color: #FF9D57;
-    box-shadow: 0 0 1px;
+    box-shadow: 0 0 3px;
   }
   
   #login-navbar nav {
-    height: 3vw;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 2.9vw;
-  padding-right: 5vw;
-  
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
   }
   
   #login-navbar nav .login-navlist {
@@ -123,11 +118,8 @@ h3#welcome:hover{
   
   #login-navbar nav .logo-login {
     -webkit-user-drag: none;
-  position: relative;
-  width: 20vw;
-  height: 2vw;
-  z-index: 3;
-  padding-left: 2.5vw;
+    height: 3vw;
+    width: 19vw;
   }
   
   #login-navbar nav .login-navlist li {
@@ -179,38 +171,90 @@ h3#welcome:hover{
     transition: all 0.3s ease;
   }
   
+  @media (max-width: 1440px) { 
+    #login-navbar nav .logo-login {
+      height: 4vw;
+      width: 23vw;
+    }
 
-  
-@media screen and (max-width: 1400px) {
-  nav{
-    height: 4vw;
-  }
-
-  #login-navbar .login-navlist a {
-    font-size: 15vw;
-  }
-  #login-navbar nav .login-navlist a:after {
-    bottom: 0.7vw;
-  }
-}
-@media screen and (max-width: 1000px) {
-  nav{
-    height: 4vw;
+    #login-navbar {
+      height: 4vw;
+    }
   }
 
-  #login-navbar .login-navlist a {
-    font-size: 15vw;
+  @media (max-width: 1024px) { 
+    #login-navbar nav .logo-login {
+      height: 5vw;
+      width: 32vw;
+    }
+
+    #login-navbar {
+      height: 5vw;
+    }
   }
-  #login-navbar nav .login-navlist a:after {
-    bottom: 1vw;
-  }
-}
-@media screen and (max-width: 700px) {
-  #login-navbar nav .login-navlist a:after {
-    bottom: 1.5vw;
-  }
-  #login-navbar nav .login-navlist a:hover:after {
-    width: 100%;
-  }
+
+  @media (max-width: 768px) { 
+    #login-navbar nav .logo-login {
+      height: 5vw;
+      width: 33vw;
+    }
+
+    #login-navbar {
+      height: 5vw;
+    }
 }
 
+@media (max-width: 576px) { 
+  #login-navbar nav .logo-login {
+    height: 5vw;
+    width: 35vw;
+  }
+
+  #login-navbar {
+    height: 6vw;
+  }
+}
+
+@media (max-width: 500px) { 
+  #login-navbar nav .logo-login {
+    height: 6vw;
+    width: 40vw;
+  }
+
+  #login-navbar {
+    height: 7vw;
+  }
+}
+
+@media (max-width: 425px) { 
+  #login-navbar nav .logo-login {
+    height: 7vw;
+    width: 46vw;
+  }
+
+  #login-navbar {
+    height: 8vw;
+  }
+}
+
+@media (max-width: 375px) { 
+  #login-navbar nav .logo-login {
+    height: 7vw;
+    width: 50vw;
+  }
+
+  #login-navbar {
+    height: 8vw;
+  }
+}
+
+@media (max-width: 325px) { 
+  #login-navbar nav .logo-login {
+    height: 8vw;
+    width: 55vw;
+  }
+
+  #login-navbar {
+    height: 9vw;
+  }
+}
