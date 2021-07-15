@@ -29,10 +29,8 @@ class ProfileNavbar extends React.Component {
               <a id="sing-out" href="/home" className="menu-item" onClick={this.handleLoginOut}>Sign out</a>
             </Menu>
             <div id="profile-navbar"> 
-              <nav>
               <a href="/home"><img src = {logo} className="logo-profile"></img></a>
                 <h3 id="welcome"> Welcome, {localStorage.getItem("first name")}</h3>
-              </nav>
             </div>
           </div>
           :
