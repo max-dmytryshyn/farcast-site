@@ -1,12 +1,12 @@
 import React,  { Component } from "react"
 import DataList from "./DataList" 
-import HomePageNavbar from "../navbars/HomePageNavbar"
+import ProfileNavbar from "../navbars/ProfileNavbar"
 import "./PredictionTable.css"
 
 class PredictionTable extends Component {
     render () {
         return <div id = "testone">
-             <HomePageNavbar />
+             <ProfileNavbar/>
                 <div className="head">
                     <span className="bake"> Що пекти </span>
                 </div>                    

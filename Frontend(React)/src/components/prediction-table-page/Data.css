@@ -40,7 +40,6 @@ html {
     padding-left: 20vw;
 }
 
-
 .databox{
     z-index: 0;
     position: relative;
@@ -91,13 +90,11 @@ hr{
         padding-top: 2vw;
         font-size: 6vw;
     }
-    
   }
   
 
   @media screen and (max-width: 700px) {
     .databox{
-        margin-top: 5vw;
         left: 15vw;
         width: 70vw;
         height: 600px;
@@ -119,18 +116,19 @@ hr{
     .time{
         padding-top: 2vw;
         font-size: 6vw;
-    }
-    
+    } 
   }
   
 
 @media screen and (max-width: 425px) {
     .databox{
+        top: 70px;
         left: 15vw;
         width: 70vw;
         height: 600px;
     }
     .head{
+        top: 40px;
         left: 15vw;
         width: 70vw;       
         height: 6vw; 
@@ -147,7 +145,5 @@ hr{
         padding-top: 2vw;
         font-size: 6vw;
     }
-
-    
   }
   
