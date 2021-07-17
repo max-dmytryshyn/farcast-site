@@ -1,141 +1,52 @@
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 94%;
-  top: 12px;
-}
-
-.bm-burger-bars {
-  background: #373a47;
-}
-
-.bm-burger-bars-hover {
-  background: #a90000;
-}
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
-}
-
-.bm-cross {
-  background: #000000;
-}
-
-.bm-menu-wrap {
-  position: fixed;
-  height: 100%;
-}
-
-.bm-menu {
-  background: #FFD2B1;
-  padding: 2.5em 1.5em 0;
-  font-size: 0.55em;
-  
-}
-
-.bm-menu a{
-  color: #000000;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.bm-menu a:hover{
-  color: #6d1515;
-}
-
-.bm-morph-shape {
-  fill: #373a47;
-}
-
-.bm-item-list {
-  color: #b8b7ad;
-  padding: 1em;
-  font-size: 27px;
-  font-weight: 600;
-}
-
-.bm-item-list a {
-  padding: 0.4em;
-  box-shadow: inset 0 -1px rgb(0 0 0 / 20%);
-}
-
-.bm-item {
-  display: inline-block;
-}
-
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-h3#welcome {
-  position: fixed;
-  right: 8%;
-  font-weight: 400;
-}
-
-h3#welcome:hover{
-  color: #6d1515;
-}
-
 #navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 3vw;
-  z-index: 3;
   background-color: #FF9D57;
-  box-shadow: 0 0 1px;
-}
-
-#navbar nav {
-  height: 3vw;
+  box-shadow: 0 0 3px;
+  z-index: 3;
+  height: 60px;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 2.9vw;
-  padding-right: 7vw;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  padding-left: 2vw;
 }
-
-#navbar nav .navlist {
+  
+#navbar  .navlist {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   padding-top: 0.5vw;
-    
 }
-
-#navbar nav .logo {
+  
+#navbar .homepage-logo {
   -webkit-user-drag: none;
-  position: relative;
-  width: 20vw;
-  height: 2vw;
-  z-index: 3;
-  padding-left: 2.5vw;
+  width: 18vw;
+  height: 3vw;
 }
-
-#navbar nav .navlist li {
+  
+#navbar .navlist li {
   list-style: none;
-  padding: 0.5vw 1vw 0vw 1vw;
-}
-
-#navbar nav .navlist a {
+  padding: 0.5vw 2vmin 0 2vmin;
+}  
+  
+#navbar .navlist a {
   position: relative;
   color: black;
   text-decoration: none;
@@ -143,12 +54,12 @@ h3#welcome:hover{
   letter-spacing: 0.2em;
   font-weight: 100;
   font-size: 1.2vw;
-  padding: 2vw 0.78vw 0.6vw;
+  padding: 10px 15px 10px;
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
-}
-
-#navbar nav .navlist a:after {
+}  
+  
+#navbar .navlist a:after {
   bottom: 0.3vw;
   content: "";
   display: block;
@@ -161,15 +72,15 @@ h3#welcome:hover{
   width: 0;
 }
 
-#navbar nav .navlist a:hover:after {
+#navbar .navlist a:hover:after {
   width: 100%;
 }
 
-#navbar nav .burger {
+#navbar .burger {
   display: none;
 }
 
-#navbar nav .burger div {
+#navbar .burger div {
   position: relative;
   width: 25px;
   height: 2px;
@@ -177,76 +88,103 @@ h3#welcome:hover{
   margin: 5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+} 
+
+@media (max-width: 1440px) { 
+  #navbar .homepage-logo {
+    height: 80%;
+    width: 30%;
+  }
+  #navbar .navlist a {
+    font-size: 23px;
+  }
 }
 
-
-
-@media screen and (max-width: 1400px) {
-  nav{
-    height: 4vw;
-  }
-
-  #navbar nav .navlist a {
-    padding-bottom: 1vw;
+@media (max-width: 1024px) { 
+  #navbar .navlist a {
+    font-size: 20px;
     
   }
-  #navbar nav .navlist a:after {
-    bottom: 0.7vw;
+}
+@media (max-width: 801px) { 
+  #navbar .navlist a {
+    font-size: 18px;
+    padding: 0px 20px 0px 0px;
+  }
+  #navbar .navlist li {
+    padding: 0px 0px 0px 0px;
+    margin-top: 10px;
+    margin-right: 10px;
   }
 }
-@media screen and (max-width: 1024px) {
-  #navbar{
-    height: 5vw;
-    
-  }
-  #navbar nav .navlist a{
-    top: 1vw;
-    font-size: 2vw;
-  }
-  #navbar nav .logo{
-    top: 1vw;
-    width: 20vw;
-    height: 20vw;
+
+@media (max-width: 768px) {
+  #navbar {
+    height: 50px; 
   }
 
-  #navbar nav .navlist a {
-    padding-bottom: 1.2vw;
+  h3#welcome {
+    right: 15%;
+    word-wrap: break-word;
+    max-width: 40%;
   }
-  #navbar nav .navlist a:after {
-    bottom: 1vw;
-  }
-}
-@media screen and (max-width: 500px) {
-  #navbar{
-    height: 7vw;
-    
-  }
-  #navbar nav .navlist a{
-    top: 6vw;
-    font-size: 3vw;
-  }
-  #navbar nav .logo{
-    top: 2vw;
-    width: 20vw;
-    height: 20vw;
-  }
-  
-  #navbar nav .navlist a {
-    padding-bottom: 1.7vw;
-  }
-  #navbar nav .navlist a:after {
-    bottom: 1.5vw;
-  }
-  #navbar nav .navlist a:hover:after {
-    width: 100%;
+
+  .bm-burger-button {
+    left: 90%;
+    height: 30px;
+    width: 40px;
   }
 }
-@media screen and (max-width: 425px) {
-  #navbar nav .navlist{
+
+@media (max-width: 760px) {
+  #navbar a.home, #navbar a.about ,#navbar a.prices  {
     display: none;
   }
-  .logo {
-    display: flex ;
+  #navbar .navlist a.sing__in {
+    font-size: 25px;
   }
-  
+}
+
+@media (max-width: 670px) { 
+  .bm-burger-button {
+    height: 25px;
+    width: 35px;
+  }
+  #navbar .homepage-logo {
+    height: 80%;
+    width: 40%;
+  }
+  #navbar .navlist a {
+    font-size: 18px;
+    padding: 0px 10px 0px 0px;
+  }
+  #navbar .navlist li {
+    padding: 0px 0px 0px 0px;
+    margin-top: 10px;
+    margin-right: 0px;
+  }
+  #navbar .navlist a.sing__in {
+    right: 15%;
+  }
+}
+
+@media (max-width: 425px) { 
+  .bm-burger-button {
+    left: 88%;
+  }
+  #navbar .navlist a.sing__in {
+    right: 10%;
+  }
+}
+
+@media (max-width: 375px) { 
+  #navbar .navlist a.sing__in {
+    right: 5%;
+  }
+}
+@media (max-width: 320px) { 
+  #navbar .navlist a.sing__in {
+    top: 5%;
+    font-size: 20px;
+  }
 }

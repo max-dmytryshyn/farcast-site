@@ -30,23 +30,19 @@ class Nav extends React.Component {
               <a id="sing-out" href="/home" className="menu-item" onClick={this.handleLoginOut}>Sign out</a>
             </Menu>
             <div id="navbar"> 
-              <nav>
-                <img src = {logo} className="logo"></img>
+                <img src = {logo} className="homepage-logo"></img>
                 <h3 id="welcome"> Welcome, {localStorage.getItem("first name")}</h3>
-              </nav>
             </div>
           </div>
           :
           <div id="navbar"> 
-            <nav>
-              <img src = {logo} className="logo"></img>
+              <img src = {logo} className="homepage-logo"></img>
               <ul className="navlist"> 
-                <li><a href="#start">Home</a></li>
-                <li><a href="#features_part">About</a></li>
-                <li><a href="#pay_plans_part">Prices</a></li>
-                <li><a href="/login">Sign in</a></li>
+                <li><a class = "home" href="#start">Home</a></li>
+                <li><a class = "about" href="#features_part">About</a></li>
+                <li><a class = "prices" href="#pay_plans_part">Prices</a></li>
+                <li><a class = "sing__in" href="/login">Sign in</a></li>
               </ul>
-            </nav>
           </div>
           
         }
