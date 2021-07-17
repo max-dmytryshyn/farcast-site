@@ -126,6 +126,7 @@ hr {
 @media (max-width: 576px) { 
   .h1, h1.form__title {
     font-size: 3rem;
+    padding-top: 5%;
   }
   
   .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
@@ -153,9 +154,15 @@ hr {
   .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
     width: 95px;
    }
+   .h1, h1.form__title {
+    padding-top: 8%;
+  }
 }
 @media (max-width: 320px) {
   .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
     width: 80px;
    }
+   .h1, h1.form__title {
+    padding-top: 10%;
+  }
 }
