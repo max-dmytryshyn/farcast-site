@@ -46,6 +46,7 @@ body {
 }
 
 #welcome_part {
+  padding-top: 0.1px;
   height: 45vw;
   width: 100%;
 }
