@@ -5,7 +5,6 @@ import django.contrib.auth.validators
 import django.core.validators
 from django.db import migrations, models
 import django.utils.timezone
-import django_countries.fields
 
 
 class Migration(migrations.Migration):
@@ -37,7 +36,6 @@ class Migration(migrations.Migration):
                 ('address2', models.CharField(blank=True, max_length=1024, null=True, verbose_name='Address line 2')),
                 ('zip_code', models.CharField(blank=True, max_length=12, null=True, verbose_name='Postal Code')),
                 ('city', models.CharField(blank=True, max_length=1024, null=True, verbose_name='City')),
-                ('country', django_countries.fields.CountryField(blank=True, max_length=2, null=True)),
                 ('mobile_phone', models.CharField(blank=True, max_length=17, null=True, validators=[django.core.validators.RegexValidator(message='Enter a valid international mobile phone number starting with +(country code)', regex='^\\+(?:[0-9]●?){6,14}[0-9]$')], verbose_name='Mobile phone')),
                 ('additional_information', models.CharField(blank=True, max_length=4096, null=True, verbose_name='Additional information')),
                 ('photo', models.ImageField(default='photos/default-user-avatar.png', upload_to='photos/', verbose_name='Photo')),
