@@ -1,0 +1,40 @@
+import React, { useState } from "react";
+import DatePicker from 'react-date-picker';
+import "react-date-picker/dist/DatePicker.css"
+import 'react-calendar/dist/Calendar.css'
+import { addDate } from "./date/dateActions";
+import { connect } from 'react-redux'
+
+function Calendare() {
+    const defaultValue = new Date(2016, 3, 11);
+    const[selectedDate, setSelectedDate] = useState(defaultValue)
+    var month =("0" + (selectedDate.getMonth() + 1)).slice(-2)
+    var main_date = selectedDate.getFullYear() + "-" + month + "-" + selectedDate.getDate()
+    return (
+        <span className="calendar">
+            
+            <DatePicker
+                onChange={setSelectedDate}                              
+                value={selectedDate}
+                locale="ua"
+                dateFormat='yyyy-MM-dd'
+                isClearable            
+            />
+        </span>
+    )
+}
+
+const mapStateToProps = state => {
+    return {
+        date: state.date
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        addDate: (date) => {dispatch(addDate(date))}
+    }
+}
+
+export default Calendare 
+
