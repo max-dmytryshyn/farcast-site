@@ -1,8 +1,9 @@
   
    .Registration {
     padding-top: 4%;
+    margin-top: 10vw;
     display: flex;
-    align-items: flex-start;
+      align-items: flex-start;
     justify-content: center;
     background-color: #FF9D57;
   }

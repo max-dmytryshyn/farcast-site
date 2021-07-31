@@ -1,7 +1,9 @@
 import { ADD_DATE } from './dateTypes'
 
-export const addDate = () => {
+
+export const addDate = (date) => {
     return {
-        type: ADD_DATE
+        type: ADD_DATE,
+        date: date
     }
 }

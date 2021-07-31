@@ -3,13 +3,14 @@
 }
 */
 .login {
+    margin-top: 15vw;
     background-color: #FF9D57;
     text-align:  center;
 }
 
 .boxOne { 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin: 0 auto; 
+    margin: auto; 
     margin-top: 6%;
     text-align:  center;
     color: rgb(0, 0, 0);

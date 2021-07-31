@@ -10,7 +10,7 @@ class PredictionTable extends Component {
              <HomePageNavbar />
                 <div className="head">                    
                     <span className="bake"> Що пекти </span>
-                    <Calendare /> 
+                    <Calendare/>
                 </div>                    
                     <DataList />
                 </div>

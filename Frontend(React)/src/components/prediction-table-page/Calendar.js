@@ -5,14 +5,18 @@ import 'react-calendar/dist/Calendar.css'
 import { addDate } from "./date/dateActions";
 import { connect } from 'react-redux'
 
+import store from "./store";
+
+
 function Calendare() {
     const defaultValue = new Date(2016, 3, 11);
     const[selectedDate, setSelectedDate] = useState(defaultValue)
     var month =("0" + (selectedDate.getMonth() + 1)).slice(-2)
     var main_date = selectedDate.getFullYear() + "-" + month + "-" + selectedDate.getDate()
+    store.dispatch(addDate(main_date))
+
     return (
         <span className="calendar">
-            
             <DatePicker
                 onChange={setSelectedDate}                              
                 value={selectedDate}
@@ -37,4 +41,3 @@ const mapDispatchToProps = dispatch => {
 }
 
 export default Calendare 
-
