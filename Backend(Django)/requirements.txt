@@ -5,9 +5,6 @@ attrs==20.3.0
 certifi==2020.12.5
 chardet==4.0.0
 Django==3.2
-django-bitfield==1.6.4
-django-countries==7.1
-django-countries-field==0.1.0
 djangorestframework==3.12.4
 fields==5.0.0
 geoip2==4.1.0
