@@ -28,10 +28,6 @@ class Migration(migrations.Migration):
         ),
         migrations.RemoveField(
             model_name='farcastuser',
-            name='country',
-        ),
-        migrations.RemoveField(
-            model_name='farcastuser',
             name='date_of_birth',
         ),
         migrations.RemoveField(
