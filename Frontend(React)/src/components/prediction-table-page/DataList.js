@@ -28,7 +28,7 @@ class DataList extends React.Component {
     render () {
         this.setData(this.props.date)
         var current_hour = this.state.data[0] - 1;
-        console.log(this.props.date)
+
         return (
             <div className="databox" >            
             {this.state.data.map(postDetail => {
