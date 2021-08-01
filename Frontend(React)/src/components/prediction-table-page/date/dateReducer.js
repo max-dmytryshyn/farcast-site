@@ -1,7 +1,9 @@
 import {ADD_DATE} from './dateTypes'
 
+var today = new Date();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 const initialState = {
-    date: "2016-04-11"
+    date: date
 }
 
 const reducer = (state = initialState, action) => { 

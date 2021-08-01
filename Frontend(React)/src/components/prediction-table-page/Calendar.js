@@ -9,7 +9,7 @@ import store from "./store";
 
 
 function Calendare() {
-    const defaultValue = new Date(2016, 3, 11);
+    const defaultValue = new Date();
     const[selectedDate, setSelectedDate] = useState(defaultValue)
     var month =("0" + (selectedDate.getMonth() + 1)).slice(-2)
     var main_date = selectedDate.getFullYear() + "-" + month + "-" + selectedDate.getDate()

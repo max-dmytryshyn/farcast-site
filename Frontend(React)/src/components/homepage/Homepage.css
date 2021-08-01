@@ -87,7 +87,7 @@ body {
   width: 95%;
   background: white;
   bottom: 22vw;
-  left: 7vw;
+  left: 5vw;
 }
 
 .yours {
@@ -670,4 +670,262 @@ body {
   float: right;
   padding-right: 1vw;
 }
-/*# sourceMappingURL=Homepage.css.map */
+
+@media screen and (max-width: 425px) {
+  #welcome_part {
+    height: 70vw;
+  }
+  .square {
+    width: 85%;
+    height: 50vw;
+    margin-top: 17vw;
+  }
+  .first_line {
+    top: 5vw;
+  }
+  .content {
+    font-size: 10vw;
+    padding-top: 15vw;
+  }
+  .circle_red_woman {
+    z-index: 1;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 25vw;
+    padding-left: 60vw;
+    margin-top: 20vw;
+  }
+  .red_woman {
+    display: none;
+  }
+  .buy_button {
+    display: none;
+  }
+  #features_part {
+    padding-top: 5vw;
+    height: 120vw;
+  }
+  .second_line {
+    bottom: -5vw;
+  }
+  .yellow_man {
+    display: none;
+  }
+  .row1 {
+    padding-left: 8vw;
+    padding-top: 8vw;
+    font-size: 5vw;
+  }
+  .row2 {
+    padding-left: 8vw;
+    padding-top: 10vw;
+    font-size: 5vw;
+  }
+  .box1 {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 7px;
+  }
+  .box2 {
+    width: 40vw;
+    height: 40vw;
+  }
+  .circle1 {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 7px;
+  }
+  .circle2 {
+    display: none;
+  }
+  .circle3 {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 7px;
+  }
+  .box3 {
+    display: none;
+  }
+  .quote1 {
+    position: absolute;
+    left: 18vw;
+    top: 73vw;
+  }
+  .quote2 {
+    position: absolute;
+    left: 58vw;
+    top: 73vw;
+  }
+  .quote3 {
+    display: none;
+  }
+  .quote4 {
+    position: absolute;
+    left: 16vw;
+    top: 125vw;
+  }
+  .quote5 {
+    position: absolute;
+    left: 62vw;
+    top: 125vw;
+  }
+  .quote6 {
+    display: none;
+  }
+  #pay_plans_part {
+    padding-top: 3.9vw;
+    height: 400vw;
+  }
+  .blue_man {
+    display: none;
+  }
+  .newbie_plan {
+    display: block;
+    height: 120vw;
+    width: 86vw;
+    border-radius: 2vw;
+  }
+  .newbie_plan img {
+    width: 3vw;
+    height: 2.7vw;
+  }
+  .newbie_plan .name {
+    font-size: 10vw;
+  }
+  .newbie_plan .cost {
+    font-size: 7vw;
+    margin-top: -3vw;
+  }
+  .newbie_plan .dollar {
+    font-size: 5vw;
+  }
+  .newbie_plan .month {
+    font-size: 5vw;
+    margin-top: -3vw;
+  }
+  .newbie_plan .plans_qual {
+    font-size: 4vw;
+    margin-left: 15%;
+    line-height: 6vw;
+  }
+  .newbie_plan .optional {
+    margin-top: 15vw;
+    margin-left: 15%;
+    font-size: 3vw;
+  }
+  .newbie_plan .buy {
+    font-size: 3vw;
+    height: 5vw;
+    width: 70vw;
+    margin-left: 8vw;
+  }
+  .newbie_plan .extra {
+    margin-top: 1vw;
+    font-size: 3vw;
+  }
+  .standart_plan {
+    display: block;
+    height: 120vw;
+    width: 86vw;
+    border-radius: 2vw;
+    margin-top: 10vw;
+  }
+  .standart_plan img {
+    width: 3vw;
+    height: 2.7vw;
+  }
+  .standart_plan .name {
+    font-size: 10vw;
+  }
+  .standart_plan .cost {
+    font-size: 7vw;
+    margin-top: -3vw;
+  }
+  .standart_plan .dollar {
+    font-size: 5vw;
+  }
+  .standart_plan .month {
+    font-size: 5vw;
+    margin-top: -3vw;
+  }
+  .standart_plan .plans_qual {
+    font-size: 4vw;
+    margin-left: 15%;
+    line-height: 6vw;
+  }
+  .standart_plan .optional {
+    margin-top: 15vw;
+    margin-left: 15%;
+    font-size: 3vw;
+  }
+  .standart_plan .buy {
+    font-size: 3vw;
+    height: 5vw;
+    width: 70vw;
+    margin-left: 8vw;
+  }
+  .standart_plan .extra {
+    margin-top: 1vw;
+    font-size: 3vw;
+  }
+  .premium_plan {
+    display: block;
+    height: 120vw;
+    width: 86vw;
+    border-radius: 2vw;
+    margin-top: 10vw;
+  }
+  .premium_plan img {
+    width: 3vw;
+    height: 2.7vw;
+  }
+  .premium_plan .name {
+    font-size: 10vw;
+  }
+  .premium_plan .cost {
+    font-size: 7vw;
+    margin-top: -3vw;
+  }
+  .premium_plan .dollar {
+    font-size: 5vw;
+  }
+  .premium_plan .month {
+    font-size: 5vw;
+    margin-top: -3vw;
+  }
+  .premium_plan .plans_qual {
+    font-size: 4vw;
+    margin-left: 15%;
+    line-height: 6vw;
+  }
+  .premium_plan .optional {
+    margin-top: 15vw;
+    margin-left: 15%;
+    font-size: 3vw;
+  }
+  .premium_plan .buy {
+    font-size: 3vw;
+    height: 5vw;
+    width: 70vw;
+    margin-left: 8vw;
+  }
+  .premium_plan .extra {
+    margin-top: 1vw;
+    font-size: 3vw;
+  }
+  #contacts {
+    height: 60vw;
+    width: 100%;
+  }
+  #contacts #contacts_column ul .column_head {
+    font-size: 9vw;
+  }
+  #contacts #contacts_column ul .mail {
+    font-size: 5vw;
+  }
+  #contacts #contacts_column ul li {
+    font-size: 4vw;
+  }
+}
