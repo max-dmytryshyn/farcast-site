@@ -21,7 +21,7 @@ function Calendare() {
             <DatePicker
                 onChange={setSelectedDate}                              
                 value={selectedDate}
-                locale="ua"
+                locale="uk"
                 dateFormat='yyyy-MM-dd'
                 isClearable            
             />
