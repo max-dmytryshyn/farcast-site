@@ -173,88 +173,44 @@ h3#welcome:hover{
   
   @media (max-width: 1440px) { 
     #login-navbar nav .logo-login {
-      height: 4vw;
-      width: 23vw;
+      height: 55px;
+      width: 300px;
     }
 
     #login-navbar {
-      height: 4vw;
+      height: 55px;
     }
   }
-
+ 
   @media (max-width: 1024px) { 
     #login-navbar nav .logo-login {
-      height: 5vw;
-      width: 32vw;
+      height: 50px;
+      width: 250px;
     }
 
     #login-navbar {
-      height: 5vw;
+      height: 50px;
     }
   }
 
   @media (max-width: 768px) { 
     #login-navbar nav .logo-login {
-      height: 5vw;
-      width: 33vw;
+      height: 40px;
+      width: 230px;
     }
 
     #login-navbar {
-      height: 5vw;
+      height: 40px;
     }
 }
 
 @media (max-width: 576px) { 
   #login-navbar nav .logo-login {
-    height: 5vw;
-    width: 35vw;
+    height: 35px;
+    width: 200px;
   }
 
   #login-navbar {
-    height: 6vw;
-  }
-}
-
-@media (max-width: 500px) { 
-  #login-navbar nav .logo-login {
-    height: 6vw;
-    width: 40vw;
-  }
-
-  #login-navbar {
-    height: 7vw;
-  }
-}
-
-@media (max-width: 425px) { 
-  #login-navbar nav .logo-login {
-    height: 7vw;
-    width: 46vw;
-  }
-
-  #login-navbar {
-    height: 8vw;
-  }
-}
-
-@media (max-width: 375px) { 
-  #login-navbar nav .logo-login {
-    height: 7vw;
-    width: 50vw;
-  }
-
-  #login-navbar {
-    height: 8vw;
-  }
-}
-
-@media (max-width: 325px) { 
-  #login-navbar nav .logo-login {
-    height: 8vw;
-    width: 55vw;
-  }
-
-  #login-navbar {
-    height: 9vw;
+    height: 35px;
   }
 }

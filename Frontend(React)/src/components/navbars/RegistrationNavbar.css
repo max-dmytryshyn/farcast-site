@@ -93,88 +93,44 @@
   
   @media (max-width: 1440px) { 
     #registration-navbar nav .logo-registration {
-      height: 4vw;
-      width: 23vw;
+      height: 55px;
+      width: 300px;
     }
 
     #registration-navbar {
-      height: 4vw;
+      height: 55px;
     }
   }
  
   @media (max-width: 1024px) { 
     #registration-navbar nav .logo-registration {
-      height: 5vw;
-      width: 32vw;
+      height: 50px;
+      width: 250px;
     }
 
     #registration-navbar {
-      height: 5vw;
+      height: 50px;
     }
   }
 
   @media (max-width: 768px) { 
     #registration-navbar nav .logo-registration {
-      height: 5vw;
-      width: 33vw;
+      height: 40px;
+      width: 230px;
     }
 
     #registration-navbar {
-      height: 5vw;
+      height: 40px;
     }
 }
 
 @media (max-width: 576px) { 
   #registration-navbar nav .logo-registration {
-    height: 5vw;
-    width: 35vw;
+    height: 35px;
+    width: 200px;
   }
 
   #registration-navbar {
-    height: 6vw;
-  }
-}
-
-@media (max-width: 500px) { 
-  #registration-navbar nav .logo-registration {
-    height: 6vw;
-    width: 40vw;
-  }
-
-  #registration-navbar {
-    height: 7vw;
-  }
-}
-
-@media (max-width: 425px) { 
-  #registration-navbar nav .logo-registration {
-    height: 7vw;
-    width: 46vw;
-  }
-
-  #registration-navbar {
-    height: 8vw;
-  }
-}
-
-@media (max-width: 375px) { 
-  #registration-navbar nav .logo-registration {
-    height: 7vw;
-    width: 50vw;
-  }
-
-  #registration-navbar {
-    height: 8vw;
-  }
-}
-
-@media (max-width: 325px) { 
-  #registration-navbar nav .logo-registration {
-    height: 8vw;
-    width: 55vw;
-  }
-
-  #registration-navbar {
-    height: 9vw;
+    height: 35px;
   }
 }

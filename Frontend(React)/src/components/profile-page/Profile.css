@@ -85,6 +85,11 @@ hr {
   background-color: #000000;
 }
 
+@media (max-width: 1440px) {
+.container-profile {
+  margin-top: 20px;
+}
+}
 @media (max-width: 1024px) {
   .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
     margin-left: 0;
@@ -93,7 +98,6 @@ hr {
    .container-profile {
     height: 100%;
     width: 95%;
-    padding-bottom: 5%;
   }
   .check_box {
     padding-right: 0;
@@ -104,8 +108,9 @@ hr {
 @media (max-width: 768px) {
   .container-profile {
     height: 100%;
-    width: 98%;
+    width: 95%;
     padding-bottom: 2%;
+    margin-bottom: 20px;
   }
   .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
   margin-left: 0;
@@ -121,14 +126,17 @@ hr {
    .h5, h5 {
     font-size: 1.35rem
   }
+  .container-profile {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 576px) { 
   .h1, h1.form__title {
     font-size: 3rem;
-    padding-top: 5%;
+   
   }
-  
+
   .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
     width: 150px;
    }
@@ -139,6 +147,9 @@ hr {
   .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
     width: 110px;
    }
+   .container-profile {
+    margin-top: 35px;
+  }
 }
 @media (max-width: 425px) {
   .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
@@ -148,14 +159,16 @@ hr {
    .h1, h1.form__title {
     font-size: 2.5rem;
     font-weight: 400;
+    padding-top: 3%;
    }
+
 }
 @media (max-width: 375px) {
   .btn-primary-profile:not(:disabled):not(.disabled).active, .btn-primary-profile:not(:disabled):not(.disabled):active, .show > .btn-primary-profile.dropdown-toggle {
     width: 95px;
    }
    .h1, h1.form__title {
-    padding-top: 8%;
+    padding-top: 2%;
   }
 }
 @media (max-width: 320px) {

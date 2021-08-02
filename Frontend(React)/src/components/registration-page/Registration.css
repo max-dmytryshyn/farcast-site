@@ -5,7 +5,6 @@
     align-items: flex-start;
     justify-content: center;
     background-color: #FF9D57;
-    /*padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1600-320)));*/
   }
   
   .containerRegister {
@@ -17,6 +16,8 @@
     background: #FFD2B1;
     margin: 0 auto; 
     color: rgb(0, 0, 0);
+    margin-left: 15px;
+    margin-right: 15px;
   }
   
   .form_one {
@@ -115,8 +116,25 @@
   .form__input-group {
     margin: 0 auto;
   }
+  @media (max-width: 1440px) {
+    .containerRegister {
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+    .h1, h1.form__title__head {
+      padding-top: 0;
+    }
+    .from {
+      padding-top: 2%;
+    }
+  }
 
   @media (max-width: 768px) {
+    .containerRegister {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 20px;
+    }
     .form {
       padding-top: 2%;
     }
@@ -149,6 +167,11 @@
   }
 
   @media (max-width: 425px) {
+    .containerRegister {
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 25px;
+    }
     .form__input {
       padding-right: 40px;
     }
@@ -159,6 +182,7 @@
 
     .h1, h1.form__title__head {
       font-size: 2.5rem;
+      margin-top: 10px;
     }
 
     .form_one, .form_two, .form_three{
