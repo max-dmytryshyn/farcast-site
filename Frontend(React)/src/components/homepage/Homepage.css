@@ -678,12 +678,12 @@ body {
 
 @media screen and (max-width: 425px) {
   #welcome_part {
-    height: 60vw;
+    height: 70vw;
   }
   .square {
     width: 85%;
     height: 50vw;
-    margin-top: 40px;
+    margin-top: 17vw;
   }
   .first_line {
     top: 5vw;
@@ -698,9 +698,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 65vw;
-    padding-top: 2vw;
-    height: 100px;
+    height: 25vw;
+    padding-left: 60vw;
+    margin-top: 20vw;
   }
   .red_woman {
     display: none;
@@ -709,7 +709,7 @@ body {
     display: none;
   }
   #features_part {
-    padding-top: 2vw;
+    padding-top: 5vw;
     height: 120vw;
   }
   .second_line {
@@ -756,12 +756,12 @@ body {
   .quote1 {
     position: absolute;
     left: 18vw;
-    top: 70vw;
+    top: 73vw;
   }
   .quote2 {
     position: absolute;
     left: 58vw;
-    top: 70vw;
+    top: 73vw;
   }
   .quote3 {
     display: none;
@@ -769,12 +769,12 @@ body {
   .quote4 {
     position: absolute;
     left: 16vw;
-    top: 123vw;
+    top: 125vw;
   }
   .quote5 {
     position: absolute;
     left: 62vw;
-    top: 123vw;
+    top: 125vw;
   }
   .quote6 {
     display: none;
@@ -922,6 +922,7 @@ body {
   }
   #contacts {
     height: 60vw;
+    width: 100%;
   }
   #contacts #contacts_column ul .column_head {
     font-size: 9vw;
@@ -933,4 +934,3 @@ body {
     font-size: 4vw;
   }
 }
-/*# sourceMappingURL=Homepage.css.map */
