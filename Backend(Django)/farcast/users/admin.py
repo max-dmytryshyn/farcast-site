@@ -10,7 +10,7 @@ class FarCastUserAdmin(UserAdmin):
     model = FarCastUser
     list_display = ['pk', 'email', 'username', 'first_name', 'last_name']
     add_fieldsets = UserAdmin.add_fieldsets + (
-        (None, {'fields': ('email', 'first_name', 'last_name', 'address''mobile_phone')}),
+        (None, {'fields': ('email', 'first_name', 'last_name', 'address', 'mobile_phone')}),
     )
     fieldsets = UserAdmin.fieldsets + (
         (None, {'fields': ('address', 'mobile_phone')}),
