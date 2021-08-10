@@ -39,11 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    # 'rest_framework.authtoken',
+   #'rest_framework.authtoken',
     'corsheaders',
     'users.apps.UsersConfig',
     'predictions.apps.PredictionTablesConfig',
     'products.apps.ProductsConfig',
+    'transactions.apps.TransactionsConfig',
 ]
 
 REST_FRAMEWORK = {
