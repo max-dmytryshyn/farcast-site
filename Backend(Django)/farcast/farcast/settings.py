@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     'rest_framework',
     # 'rest_framework.authtoken',
     'corsheaders',
+    #My Apps
     'users.apps.UsersConfig',
     'predictions.apps.PredictionTablesConfig',
     'products.apps.ProductsConfig',
