@@ -3,30 +3,47 @@ import axios from 'axios';
 import "./Data.css"
 import { connect } from 'react-redux'
 
+let hasErrr = false;
+let errormsg;
+
 class DataList extends React.Component {
     
     constructor(props) {
         super(props);
         this.state = {
-            data: []
+            data: [],
+            hasErr: false
         }
     }
     
     setData = (date) => {
         axios.get("http://127.0.0.1:8000/predictions/all/date/" + date + "/"
-        ).then((response) =>{this.setState({data: response.data})})
-    }
-    getData = (date) => {
-        return date;
+        ).then((response) =>{                      
+            this.setState({data: response.data})
+            this.setState({hasErr: false})            
+            hasErrr = this.state.hasErr
+        }).catch(function(error) {
+            console.log(error.response.data)
+            console.log(error.response.status)
+            errormsg = error.response.data
+            hasErrr = true
+        })
     }
 
-    handleClick = () => {
-        // force a re-render
-        this.forceUpdate()
-    };
+    
 
     render () {
         this.setData(this.props.date)
+        console.log(hasErrr)
+        if(hasErrr === true) {
+            return (
+                <div className="databox">
+                    <p id="errormsg">There are no predictions for this date</p>
+                </div>
+            )
+        }
+        else {
+        
         var current_hour = this.state.data[0] - 1;
 
         return (
@@ -56,6 +73,7 @@ class DataList extends React.Component {
 
         ) 
     }
+}
 }
 
 function mapStateToProps(state) {
