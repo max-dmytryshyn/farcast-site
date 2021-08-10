@@ -6,6 +6,7 @@ import Login from "./components/login-page/Login"
 import Registration from "./components/registration-page/Registration"
 import PredictionTable from "./components/prediction-table-page/PredictionTable"
 import Profile from "./components/profile-page/Profile"
+import CsvUploadPage from "./components/csv-upload-page/CsvUploadPage"
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/registration" component={Registration} />
             <Route path="/predictions" component={PredictionTable} />
             <Route path="/profile" component={Profile} />
+            <Route path="/csv-upload-page" component={CsvUploadPage}/>
         </div>
     )
 }

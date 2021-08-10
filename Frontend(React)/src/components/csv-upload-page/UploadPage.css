@@ -1,0 +1,73 @@
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #FF9D57;
+    color: black;
+    font-family: Roboto;
+    
+  }
+
+.wrap_box {
+    position: relative;    
+    background-color: #FFD2B1;
+    margin-top: 10vw;
+    left: 25%;
+    height: 30vw;
+    width: 50vw;
+    border-radius: 0.5vw;
+    text-align: center;
+}
+
+.import_txt {
+    margin: 0 auto;
+    padding-top: 5vw;
+    font-size: 4vw;
+    width: 30vw;
+}
+
+label{
+    width: 17vw;
+    height: 2vw;
+    background-color: aliceblue;
+    border-radius: 1vw;
+    cursor: pointer;
+    padding-top: 0.3vw;
+}
+#upload_btn{   
+    
+    border-width: 0;
+}
+
+.hide{
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+}
+
+#file-upload-button{
+    display: none;
+}
+
+#deco_line_one{
+    display: flex;
+    float: left;
+    height: 0.1vw;
+    width: 10vw;
+    background-color: white;
+    margin-left: 2vw;
+    margin-top: 12.8vw;
+}
+#deco_line_two{
+    display: flex;
+    float: right;
+    height: 0.1vw;
+    width: 10vw;
+    background-color: white;
+    margin-right: 2vw;
+    margin-top: 12.8vw;
+}
