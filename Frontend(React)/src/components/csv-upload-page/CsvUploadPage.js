@@ -2,6 +2,9 @@ import React from 'react'
 import HomePageNavbar from "../navbars/HomePageNavbar"
 import "./UploadPage.css"
 import axios from 'axios'
+import Papa from 'papaparse';
+
+
 
 class CsvUploadPage extends React.Component{
 
@@ -10,8 +13,17 @@ class CsvUploadPage extends React.Component{
     }
 
     handleFile(e) {
-        let file = e.target.files[0]
-        this.setState({file: file})
+        let file = e.target.files[0]       
+        var result = Papa.parse(file, {
+            download: true,
+            header: true,
+            complete: (result) => {
+                console.log(result)
+            }
+        })
+        this.setState({file: result})
+
+
     }
 
     handleUpload() {
@@ -29,7 +41,7 @@ class CsvUploadPage extends React.Component{
     render () {
         
         return (
-            <div className="csv_upload_page">
+            <div className="csv_upload_page">                
                 <HomePageNavbar />
                 <div  className="wrap_box">
                     <div id="deco_line_one"/>
