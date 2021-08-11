@@ -20,7 +20,7 @@ class CsvUploadPage extends React.Component{
         formdata.append('csv_file', file)
         axios({
             method: 'post',
-            url: '/some/api',
+            url: 'http://127.0.0.1:8000/transactions/all/',
             data: formdata
             
         }).then()
