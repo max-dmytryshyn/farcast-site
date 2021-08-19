@@ -1,7 +1,8 @@
-import React from "react"
+import React from "react";
 import axios from 'axios';
-import "./Registration.css"
-import RegistrationNavbar from "../navbars/RegistrationNavbar"
+import "./Registration.css";
+import RegistrationNavbar from "../navbars/RegistrationNavbar";
+
 
 class Registration extends React.Component {
     constructor() {
@@ -14,7 +15,18 @@ class Registration extends React.Component {
             email: "",
             address: "",
             mobile_phone: "",
+            comfirmPassword: "",
         }
+        this.handleChange1 = (e) => {
+            this.setState({
+                password: e.target.value
+            });
+          };
+        this.handleChange2 = (e) => {
+            this.setState({
+                comfirmPassword: e.target.value
+            });
+          };
     }
     setUsername = (e) => {
         this.setState({ username: e.target.value });
@@ -37,6 +49,7 @@ class Registration extends React.Component {
     setMobilePhone = (e) => {
         this.setState({ mobile_phone: e.target.value });
     }
+
     handleRegister = () => {
         const { username, password, first_name, last_name, email, address, mobile_phone } = this.state;
         axios.post('http://127.0.0.1:8000/users/all/', {
@@ -55,78 +68,79 @@ class Registration extends React.Component {
             localStorage.setItem ("password", password);
             localStorage.setItem ("address", address);
             localStorage.setItem ("mobile_phone", mobile_phone);
-            localStorage.setItem("isLoggedIn", true)
-            this.props.history.push('/profile')
+            localStorage.setItem("isLoggedIn", true);
+            this.props.history.push('/profile');
         });
     }
-    render() {
+
+    checkPasswordValidation = (e) => {
+        if (document.getElementById("passwordNotMatch")) {
+        e.preventDefault(); 
+        }
+    }   
+
+    render() { 
         return (
             <div className="Registration">
                 <RegistrationNavbar/>
                 <div class="containerRegister">
-                    <form class="form" id="register">
+                    <form onSubmit = {this.checkPasswordValidation} name = "myForm" class="form" id="register">
                         <h1 class="form__title__head">Registration</h1>
-                        <form class="form_one" id="formOne">
-                        <div class="form__message form__message--error"></div>
-                        <div class="form__input-group">
-                            <h5 class="name">Name</h5>
-                            <input type="text" class="form__input" id="first_name" autofocus placeholder="Enter name" onChange={this.setFirstName}/>
-                            <div class="form__input-error-message"></div>
+                        <div class="form_one" id="formOne">
+                            <div class="form__message form__message--error"></div>
+                            <div class="form__input-group">
+                                <h5 class="name">Name</h5>
+                                <input required type="text" class="form__input" id="first_name" autofocus placeholder="Enter name" onChange={this.setFirstName}/>
+                            </div>
+                            <div data-validate="Comfirm Password is required" class="form__input-group">
+                                <h5 class="password">Password</h5>
+                                <input required minLength="8" value={this.state.password} type="password" className="form__input"
+                                autofocus placeholder="Enter password"  onChange={this.setPassword, this.handleChange1}/>
+                            </div>
                         </div>
-                        <div class="form__input-group">
-                            <h5 class="password">Password</h5>
-                            <input type="password" class="form__input" autofocus placeholder="Enter password"  onChange={this.setPassword}/>
-                        <div class="form__input-error-message"></div>
+                        <div class="form_two" id="formTwo">
+                            <div class="form__message form__message--error"></div>
+                            <div class="form__input-group">
+                                <h5 class="surname">Surname</h5>
+                                <input required type="text" class="form__input"  autofocus placeholder="Enter surname"  onChange={this.setLastName}/>  
+                            </div>
+                            <div class="form__input-group"> 
+                                <h5 class="repeat_password">Repeat your password</h5>
+                                <input value={this.state.comfirmPassword} required minLength="8" name="comfirmPassword" type="password" className="form__input"
+                                autofocus placeholder="Repear your password" onChange={this.handleChange2}/> 
+                                {this.state.comfirmPassword === "" ? ("") : this.state.password === this.state.comfirmPassword ? 
+                                ("") : (<p id = "passwordNotMatch" className = "passwordNotMatch"> Passwords not match </p> ) } 
+                            </div>
                         </div>
-                        </form>
-                        <form class="form_two" id="formTwo">
-                        <div class="form__message form__message--error"></div>
-                        <div class="form__input-group">
-                            <h5 class="surname">Surname</h5>
-                            <input type="text" class="form__input"  autofocus placeholder="Enter surname"  onChange={this.setLastName}/>
-                            <div class="form__input-error-message"></div>
+                        <div class="form_three" id="formThree">
+                            <div class="form__message form__message--error"></div>
+                            <div class="form__input-group">
+                                <h5 class="username">Login</h5>
+                                <input required type="text" class="form__input" autofocus placeholder="Enter login"  onChange={this.setUsername}/>
+                            </div>
+                            <div class="form__input-group">
+                                <h5 class="email">Email</h5>
+                                <input required type="email" class="form__input" id = "email" name = "email" autofocus placeholder="Enter email"  required minlength="8" onChange={this.setEmail}/>
+                            </div>
                         </div>
-                        <div class="form__input-group">
-                            <h5 class="repeat_password">Repeat your password</h5>
-                            <input type="password" class="form__input" autofocus placeholder="Repear your password"/>
-                        <div class="form__input-error-message"></div>
+                        <div class="form_three">
+                            <div class="form__message form__message--error"></div>
+                            <div class="form__input-group">
+                                <h5 class="address">Address</h5>
+                                <input required type="text" class="form__input" autofocus placeholder="Enter your address"  onChange={this.setAddress}/>
+                            </div>
+                            <div class="form__input-group">
+                                <h5 class="mobile__phone">Mobile phone</h5>
+                                <input required pattern="+[0-9]{12}" type="tel" class="form__input" autofocus placeholder="+380..."  minlength="13" maxlength="13" onChange={this.setMobilePhone}/>
+                            </div>
                         </div>
-                        </form>
-                        <form class="form_three" id="formThree">
-                        <div class="form__message form__message--error"></div>
-                        <div class="form__input-group">
-                            <h5 class="username">Login</h5>
-                            <input type="text" class="form__input" autofocus placeholder="Enter login"  onChange={this.setUsername}/>
-                            <div class="form__input-error-message"></div>
-                        </div>
-                        <div class="form__input-group">
-                            <h5 class="email">Email</h5>
-                            <input type="email" class="form__input" autofocus placeholder="Enter email"  onChange={this.setEmail}/>
-                            <div class="form__input-error-message"></div>
-                        </div>
-                        </form>
-                        <form class="form_three" id="formThree">
-                        <div class="form__message form__message--error"></div>
-                        <div class="form__input-group">
-                            <h5 class="address">Address</h5>
-                            <input type="text" class="form__input" autofocus placeholder="Enter your address"  onChange={this.setAddress}/>
-                            <div class="form__input-error-message"></div>
-                        </div>
-                        <div class="form__input-group">
-                            <h5 class="mobile__phone">Mobile phone</h5>
-                            <input type="tel" class="form__input" autofocus placeholder="Enter mobile phone"  onChange={this.setMobilePhone}/>
-                            <div class="form__input-error-message"></div>
-                        </div>
-                        </form>
-                        <div class = "register-button" onClick={this.handleRegister} >
-                            <a href="#" target="_self" class="btn btn-primaryOne btn-lg active" role="button" aria-pressed="true">Register</a>
+                        <div class = "register-button"  onClick={this.handleRegister}>
+                            <button   class="btn btn-primaryOne btn-lg active" type = "submit">Register</button>
                         </div>
                     </form>
                 </div>
             </div>
-        )
+        )   
     }
-
-
 }
 export default Registration
